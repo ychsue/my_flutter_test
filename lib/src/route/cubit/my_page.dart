@@ -1,13 +1,15 @@
-// #region 1. Declare page types
 import 'package:flutter/material.dart';
 import 'package:test2/src/route/main_screens/home_screen.dart';
+import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
 
+// #region 1. Declare page types
 enum PageTypes {
   home,
   unknown,
   welcome,
+  sliver_screen,
 }
 // #endregion 1. Declare page types
 
@@ -77,6 +79,9 @@ class MyPage extends Page {
         break;
       case PageTypes.unknown:
         screen = UnknownScreen();
+        break;
+      case PageTypes.sliver_screen:
+        screen = SliverScreen();
         break;
       default:
         screen = UnknownScreen();

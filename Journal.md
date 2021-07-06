@@ -1,3 +1,8 @@
+# [2021-07-06] 試玩 SliverAppBar, SliverList 與 SliverGrid，而 檢查文字精確度的部分還在寫
+1. 寫了檢查文字精確度的 data部分大致發想完成，接著就是cubit要負起它邏輯判斷的部分。
+2. 試玩了 `CustomScrollView`，還蠻好玩的，寫了，但還沒變自己的想法。
+取自： [此網站](https://medium.com/flutter/slivers-demystified-6ff68ab0296f)
+
 # [2021-07-06] 完成 route 的動作
 在使用VSCode 與 Android Studio 上出現(至少)Debug mode 下會有不同的行為的問題。
 1. 原本我在VSCode 下能無錯誤地執行，但自從我引入 `testWidget` 後，它編譯後在Chrome上的執行就變得怪怪的。

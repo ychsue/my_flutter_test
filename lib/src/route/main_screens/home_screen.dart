@@ -19,6 +19,14 @@ class HomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () => context.read<PagesRetrieverCubit>().push(
+                      MyPage.type2Info(PageTypes.sliver_screen),
+                      shouldEmit: true),
+                  child: Text("Sliver")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () => context.read<PagesRetrieverCubit>().push(
                       MyPage.type2Info(PageTypes.welcome),
                       shouldEmit: true),
                   child: Text("Welcome")),
