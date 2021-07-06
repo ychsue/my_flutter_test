@@ -28,6 +28,11 @@ class MyPage extends Page {
     }
   }
 
+  static RouteInformation type2Info(PageTypes type) {
+    final location = type2Location(type);
+    return RouteInformation(location: location);
+  }
+
   static PageTypes location2Type(String? location) {
     if (location == null || location == '/' || location == '/home') {
       return PageTypes.home;

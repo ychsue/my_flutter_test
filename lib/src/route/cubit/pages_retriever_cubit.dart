@@ -6,6 +6,8 @@ import 'my_page.dart';
 class PagesRetrieverCubit extends Cubit<List<MyPage>> {
   PagesRetrieverCubit() : super([]);
 
+  bool shouldEmit = false;
+
   @override
   List<MyPage> get state {
     List<MyPage> pages;
@@ -20,21 +22,24 @@ class PagesRetrieverCubit extends Cubit<List<MyPage>> {
 
   MyPage getCurrentPage() => state.last;
 
-  void push(RouteInformation info) {
+  void push(RouteInformation info, {bool shouldEmit = false}) {
     final page = MyPage(info: info);
     state.add(page);
-    emit(state);
+    this.shouldEmit = shouldEmit;
+    emit(List.of(state));
   }
 
-  MyPage pop() {
+  MyPage pop({bool shouldEmit = false}) {
     final lastPage = state.removeLast();
-    emit(state);
+    this.shouldEmit = shouldEmit;
+    emit(List.of(state));
     return lastPage;
   }
 
-  void renew(RouteInformation? info) {
+  void renew(RouteInformation? info, {bool shouldEmit = false}) {
     state.clear();
     super.state.add(MyPage(info: info));
-    emit(state);
+    this.shouldEmit = shouldEmit;
+    emit(List.of(state));
   }
 }

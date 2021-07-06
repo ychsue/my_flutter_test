@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test2/src/route/cubit/my_page.dart';
-import 'package:test2/src/route/cubit/pages_retriever_cubit.dart';
 import 'package:test2/src/route/main_screens/home_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
