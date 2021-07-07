@@ -1,3 +1,7 @@
+# [2021-07-07] 寫了 string_accuracy 的 cubit 與 test ，順便放上 Flutter Widget of the Week 的例子
+1. 已經寫了 string_accuracy 的邏輯部分，正在想如何實現在UI上，已經用 //TODO 標示，這樣，在 PROBLEMS 裡就會看到它了。
+2. 試用了 [Flutter Widget of the Week](https://www.youtube.com/playlist?list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG) 的 第十三個示範： `FadeInImage`，嗯，有必要用到。
+
 # [2021-07-06] 試玩 SliverAppBar, SliverList 與 SliverGrid，而 檢查文字精確度的部分還在寫
 1. 寫了檢查文字精確度的 data部分大致發想完成，接著就是cubit要負起它邏輯判斷的部分。
 2. 試玩了 `CustomScrollView`，還蠻好玩的，寫了，但還沒變自己的想法。

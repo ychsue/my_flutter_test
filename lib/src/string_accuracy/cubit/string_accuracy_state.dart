@@ -1,11 +1,13 @@
 part of 'string_accuracy_cubit.dart';
 
+enum MatchType { no, exactly, caseInsensitive }
+
 @immutable
-abstract class StringAccuracyState {
+class StringAccuracyState {
   final String input; //the user's input to match the answer
   final String answer;
-  final List<bool> matchInput; // false: doesn't match, true: match
-  final List<bool> matchAnswer;
+  final List<MatchType> matchInput; // false: doesn't match, true: match
+  final List<MatchType> matchAnswer;
   final List<List<int>> roadMap;
   final double accuracy; // \sum(matchInput,matchAnswer)/(n1+n2)
 
