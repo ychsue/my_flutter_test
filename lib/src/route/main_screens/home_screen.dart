@@ -19,6 +19,14 @@ class HomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () => context.read<PagesRetrieverCubit>().push(
+                      MyPage.type2Info(PageTypes.n14_stream_builder),
+                      shouldEmit: true),
+                  child: Text("N14 StreamBuilder")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () => context.read<PagesRetrieverCubit>().push(
                       MyPage.type2Info(PageTypes.n13_fadein_image),
                       shouldEmit: true),
                   child: Text("N13 FadeInImage")),

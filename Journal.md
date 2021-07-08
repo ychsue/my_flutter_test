@@ -1,3 +1,10 @@
+# [2021-07-09] 試用了 N14_StreamBuilder，如範例的時鐘，可以運作，另外，也試用了animatedContainer
+1. `animatedContainer` 裡若有用到 stream 與別人共用 (比方，我與 `StreamBuilder` 共用)，會出現錯誤，修改法是
+```dart
+_clockStream = stream.asBroadcastStream();
+```
+這樣，就可以共用了。
+2. 之前`string_accuracy`的動畫無法運作是因為我多事給它 `ValueKey` ，它因此認定它是不同的，那當然就不會套用動畫了，所以，還是可以用 `StatelessWidget` 來玩。
 # [2021-07-08] 已經寫出簡易的string_accuracy實例了，也跑得正常，
 不過，
 a. 沒有優化

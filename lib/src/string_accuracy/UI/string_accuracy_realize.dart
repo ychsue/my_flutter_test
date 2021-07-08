@@ -63,11 +63,11 @@ class StringAccuracyRealize extends StatelessWidget {
                     // TODO Based on https://github.com/felangel/bloc/issues/528
                     // it will make the widget tree redrawn, it looks like that I need to check it.
                     AnimatedContainer(
-                      key: ValueKey(
-                          state.matchAnswer[i].toString() + i.toString()),
-                      width: 20,
-                      height: 20,
-                      duration: const Duration(milliseconds: 1000),
+                      // key: ValueKey(
+                      //     state.matchAnswer[i].toString() + i.toString()),
+                      width: 24,
+                      height: 24,
+                      duration: const Duration(milliseconds: 500),
                       child: Center(
                           child: (state.matchAnswer[i] != MatchType.no)
                               ? Text(state.answer[i])
