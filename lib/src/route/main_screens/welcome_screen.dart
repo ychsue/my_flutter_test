@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:test2/src/string_accuracy/UI/string_accuracy_realize.dart';
+import 'package:test2/src/string_accuracy/cubit/string_accuracy_cubit.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -8,7 +11,10 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Text('Welcome'),
+        child: BlocProvider(
+          create: (_) => StringAccuracyCubit(),
+          child: StringAccuracyRealize(),
+        ),
       ),
     );
   }

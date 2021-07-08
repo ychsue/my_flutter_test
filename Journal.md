@@ -1,3 +1,8 @@
+# [2021-07-08] 已經寫出簡易的string_accuracy實例了，也跑得正常，
+不過，
+a. 沒有優化
+b. 無法動畫轉變，看起來是BloC會重新渲染造成，如 [此篇](https://github.com/felangel/bloc/issues/528)所述，明天將其改成Stateful 來玩看看吧。
+
 # [2021-07-07] 寫了 string_accuracy 的 cubit 與 test ，順便放上 Flutter Widget of the Week 的例子
 1. 已經寫了 string_accuracy 的邏輯部分，正在想如何實現在UI上，已經用 //TODO 標示，這樣，在 PROBLEMS 裡就會看到它了。
 2. 試用了 [Flutter Widget of the Week](https://www.youtube.com/playlist?list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG) 的 第十三個示範： `FadeInImage`，嗯，有必要用到。
