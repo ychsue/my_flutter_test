@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:test2/src/string_accuracy/cubit/string_accuracy_cubit.dart';
+
+import '../string_accuracy.dart';
 
 class StringAccuracyRealize extends StatelessWidget {
   StringAccuracyRealize({Key? key}) : super(key: key);
@@ -12,7 +13,6 @@ class StringAccuracyRealize extends StatelessWidget {
     return null;
   }
 
-// TODO
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -52,42 +52,52 @@ class StringAccuracyRealize extends StatelessWidget {
           ),
           BlocBuilder<StringAccuracyCubit, StringAccuracyState>(
             builder: (ctx, stAcc) {
-              return Text(stAcc.accuracy.toString());
+              return ListTile(
+                leading: Text("accuracy"),
+                title: Text(stAcc.accuracy.toString()),
+                trailing: Icon(Icons.remove_red_eye),
+              );
             },
           ),
           BlocBuilder<StringAccuracyCubit, StringAccuracyState>(
             builder: (ctx, state) {
-              return Wrap(
-                children: [
-                  for (var i = 0; i < state.answer.length; i++)
-                    // TODO Based on https://github.com/felangel/bloc/issues/528
-                    // it will make the widget tree redrawn, it looks like that I need to check it.
-                    AnimatedContainer(
-                      // key: ValueKey(
-                      //     state.matchAnswer[i].toString() + i.toString()),
-                      width: 24,
-                      height: 24,
-                      duration: const Duration(milliseconds: 500),
-                      child: Center(
-                          child: (state.matchAnswer[i] != MatchType.no)
-                              ? Text(state.answer[i])
-                              : Text("")),
-                      decoration: BoxDecoration(
-                        border: Border.all(
+              return Visibility(
+                visible: state.answer.length > 3,
+                child: Wrap(
+                  children: [
+                    for (var i = 0; i < state.answer.length; i++)
+                      AnimatedContainer(
+                        // key: ValueKey(
+                        //     state.matchAnswer[i].toString() + i.toString()),
+                        width: 40 * 1.5,
+                        height: 40 * 1.5,
+                        duration: const Duration(milliseconds: 500),
+                        child: Center(
+                            child: (state.matchAnswer[i] != MatchType.no)
+                                ? Text(
+                                    state.answer[i],
+                                    style: TextStyle(
+                                        fontSize: 40,
+                                        textBaseline: TextBaseline.alphabetic),
+                                  )
+                                : Text("")),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: (state.matchAnswer[i] == MatchType.no)
+                                ? Colors.red
+                                : ((state.matchAnswer[i] ==
+                                        MatchType.caseInsensitive)
+                                    ? Colors.yellow
+                                    : Colors.green),
+                            width: 2,
+                          ),
                           color: (state.matchAnswer[i] == MatchType.no)
                               ? Colors.red
-                              : ((state.matchAnswer[i] ==
-                                      MatchType.caseInsensitive)
-                                  ? Colors.yellow
-                                  : Colors.green),
-                          width: 2,
+                              : Colors.transparent,
                         ),
-                        color: (state.matchAnswer[i] == MatchType.no)
-                            ? Colors.red
-                            : Colors.transparent,
-                      ),
-                    )
-                ],
+                      )
+                  ],
+                ),
               );
             },
           ),

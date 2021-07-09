@@ -1,4 +1,10 @@
-# [2021-07-09] 試用了 N14_StreamBuilder，如範例的時鐘，可以運作，另外，也試用了animatedContainer
+# [2021-07-09] 試著將 `string_accuracy` 變成 package
+1. 透過加上 ~library~ 使它變成 library，這樣，就可以隱藏內部函數等
+2. 為了方便以後容易看出誰是 library，所以，乾脆將它寫成一般library 的樣子，
+    順便加上一個名叫 [package.md] 的檔案，這樣，我只要用 Ctrl-P 就可以看到哪些目錄有這個檔，就知道它就是一個library
+3. 進一步為了不讓主體看起來骯髒，所以，盡量將其 IN 的 function 部分放到外部檔案，這樣，可能會乾淨一些
+
+# [2021-07-08] 試用了 N14_StreamBuilder，如範例的時鐘，可以運作，另外，也試用了animatedContainer
 1. `animatedContainer` 裡若有用到 stream 與別人共用 (比方，我與 `StreamBuilder` 共用)，會出現錯誤，修改法是
 ```dart
 _clockStream = stream.asBroadcastStream();
