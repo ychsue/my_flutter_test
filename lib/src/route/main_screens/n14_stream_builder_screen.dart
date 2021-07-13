@@ -10,6 +10,14 @@ class N14StreamBuilderScreen extends StatefulWidget {
 class _N14StreamBuilderScreenState extends State<N14StreamBuilderScreen> {
   Color? _color;
   late Stream<DateTime> _clockStream;
+  bool _isDisposing = false;
+
+  @override
+  void dispose() {
+    _isDisposing = true;
+    _clockStream.take(0);
+    super.dispose();
+  }
 
   @override
   void initState() {
@@ -51,7 +59,7 @@ class _N14StreamBuilderScreenState extends State<N14StreamBuilderScreen> {
     do {
       await Future.delayed(const Duration(seconds: 1));
       yield DateTime.now();
-    } while (true);
+    } while (!_isDisposing);
   }
 
   @override

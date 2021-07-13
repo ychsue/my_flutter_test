@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test2/src/route/main_screens/home_screen.dart';
 import 'package:test2/src/route/main_screens/n13_fadein_image_screen.dart';
 import 'package:test2/src/route/main_screens/n14_stream_builder_screen.dart';
+import 'package:test2/src/route/main_screens/n15_inherited_widget_screen.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -14,6 +15,7 @@ enum PageTypes {
   sliver_screen,
   n13_fadein_image,
   n14_stream_builder,
+  n15_inherited_widget_screen,
 }
 // #endregion 1. Declare page types
 
@@ -92,6 +94,9 @@ class MyPage extends Page {
         break;
       case PageTypes.n14_stream_builder:
         screen = N14StreamBuilderScreen();
+        break;
+      case PageTypes.n15_inherited_widget_screen:
+        screen = N15InheritedWidgetScreen();
         break;
       default:
         screen = UnknownScreen();

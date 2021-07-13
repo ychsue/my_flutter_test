@@ -1,3 +1,5 @@
+# [2021-07-13] 混用了 `getx`, `InheritedModel`，結果...沒打架 (也與Bloc 相容) 
+
 # [2021-07-09] 試著將 `string_accuracy` 變成 package
 1. 透過加上 ~library~ 使它變成 library，這樣，就可以隱藏內部函數等
 2. 為了方便以後容易看出誰是 library，所以，乾脆將它寫成一般library 的樣子，
