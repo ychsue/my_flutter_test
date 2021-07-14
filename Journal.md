@@ -1,3 +1,8 @@
+# [2021-07-14] Getx 化本測試，也試用了 `ClipRRect`
+1. 還蠻順利的。不過，記得 `pubspec.yaml` 要宣告 assets
+2. 此外，沒有試用 `ClipPath`，但，我累了，今天就到此吧。
+3. 多國語中。   
+
 # [2021-07-13] 混用了 `getx`, `InheritedModel`，結果...沒打架 (也與Bloc 相容) 
 
 # [2021-07-09] 試著將 `string_accuracy` 變成 package
