@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+// import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import '../app_pages.dart';
 
@@ -14,6 +14,13 @@ class GetHomeScreen extends StatelessWidget {
           child: Container(
         child: ListView(
           children: [
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n17_hero_screen.toLocation),
+                  child: Text("N17 Hero")),
+            ),
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(

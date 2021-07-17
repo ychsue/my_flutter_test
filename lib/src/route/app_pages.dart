@@ -3,6 +3,8 @@ import 'package:test2/src/route/main_screens/n13_fadein_image_screen.dart';
 import 'package:test2/src/route/main_screens/n14_stream_builder_screen.dart';
 import 'package:test2/src/route/main_screens/n15_inherited_widget_screen.dart';
 import 'package:test2/src/route/main_screens/n16_clip_r_rect_screen.dart';
+import 'package:test2/src/route/main_screens/n17/n17_first.dart';
+import 'package:test2/src/route/main_screens/n17/n17_hero_screen.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -18,6 +20,8 @@ enum Routes {
   n14_stream_builder,
   n15_inherited_widget_screen,
   n16_clip_r_rect,
+  n17_hero_screen,
+  n17_first,
 }
 
 abstract class AppPages {
@@ -41,6 +45,9 @@ abstract class AppPages {
     GetPage(
         name: Routes.n16_clip_r_rect.toLocation,
         page: () => N16ClipRRectScreen()),
+    GetPage(
+        name: Routes.n17_hero_screen.toLocation, page: () => N17HeroScreen()),
+    GetPage(name: Routes.n17_first.toLocation, page: () => N17First()),
   ];
 }
 
