@@ -5,6 +5,7 @@ import 'package:test2/src/route/main_screens/n15_inherited_widget_screen.dart';
 import 'package:test2/src/route/main_screens/n16_clip_r_rect_screen.dart';
 import 'package:test2/src/route/main_screens/n17/n17_first.dart';
 import 'package:test2/src/route/main_screens/n17/n17_hero_screen.dart';
+import 'package:test2/src/route/main_screens/n18/n18_custom_paint_screen.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -22,10 +23,14 @@ enum Routes {
   n16_clip_r_rect,
   n17_hero_screen,
   n17_first,
+  n18_custom_paint,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+        name: Routes.n18_custom_paint.toLocation,
+        page: () => N18CustomPaintScreen()),
     GetPage(
       name: Routes.home.toLocation,
       page: () => GetHomeScreen(),

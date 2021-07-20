@@ -1,3 +1,12 @@
+# [2021-07-20] 試用了 `CustomPaint` 與 `Animation`
+1. 請 follow [此文](https://blog.codemagic.io/flutter-custom-painter/)，簡單易懂。
+2. 動畫的產生需要
+   1. `StatefulWidget` with `TickerProviderStateMixin`，這樣，就可以省掉許多程式碼 for `Tween`
+   2. `Tween` 給定了去時間單位化的 時間 -> 數值  的轉換。所以 `Tween<double>` 意思就是轉換後的數值為 double的情形。
+   3. 而時間單位則由 `AnimationController` 來決定，而它就像駕駛一般，可以forward, reverse, stop, repeat... 它需要 `Ticker`，所以才說，省麻煩就用上述的寫法。
+   4. `controller.drive(tween)` 出來的就是 `Animation` ，藉由 `listener` 與 `statusListener` 可以告知 `StatefulWidget` 有更動與決定是否需要再重新動畫等。
+   5. 最後，記得停止`animation` 的 listens，並且 dispose 你的 `controller`。雖然小程式未必會因此而掛掉，但，還是養成好習慣好了。
+
 # [2021-07-14] Getx 化本測試，也試用了 `ClipRRect`
 1. 還蠻順利的。不過，記得 `pubspec.yaml` 要宣告 assets
 2. 此外，沒有試用 `ClipPath`，但，我累了，今天就到此吧。
