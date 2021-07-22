@@ -14,6 +14,13 @@ class GetHomeScreen extends StatelessWidget {
           child: Container(
         child: ListView(
           children: [
+                        Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () => Get.toNamed(Routes.n19_tooltip.toLocation),
+                  child: Text("N19 Tooltip")),
+            ),
+
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(

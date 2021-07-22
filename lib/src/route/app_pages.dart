@@ -6,6 +6,7 @@ import 'package:test2/src/route/main_screens/n16_clip_r_rect_screen.dart';
 import 'package:test2/src/route/main_screens/n17/n17_first.dart';
 import 'package:test2/src/route/main_screens/n17/n17_hero_screen.dart';
 import 'package:test2/src/route/main_screens/n18/n18_custom_paint_screen.dart';
+import 'package:test2/src/route/main_screens/n19_20_tooltip_fitted_box_screen.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -24,10 +25,15 @@ enum Routes {
   n17_hero_screen,
   n17_first,
   n18_custom_paint,
+  n19_tooltip,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n19_tooltip.toLocation,
+      page: () => N19TooltipScreen(),
+    ),
     GetPage(
         name: Routes.n18_custom_paint.toLocation,
         page: () => N18CustomPaintScreen()),

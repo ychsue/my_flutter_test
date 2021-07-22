@@ -1,3 +1,7 @@
+# [2021-07-22] 試了 `Tooltip` 與 `FittedBox`
+有興趣的是gradient。
+還是會動的用rive?
+
 # [2021-07-20] 試用了 `CustomPaint` 與 `Animation`
 1. 請 follow [此文](https://blog.codemagic.io/flutter-custom-painter/)，簡單易懂。
 2. 動畫的產生需要
