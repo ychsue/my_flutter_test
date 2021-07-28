@@ -8,6 +8,7 @@ import 'package:test2/src/route/main_screens/n17/n17_hero_screen.dart';
 import 'package:test2/src/route/main_screens/n18/n18_custom_paint_screen.dart';
 import 'package:test2/src/route/main_screens/n19_20_tooltip_fitted_box_screen.dart';
 import 'package:test2/src/route/main_screens/n21_layout_builder.dart';
+import 'package:test2/src/route/main_screens/n22_absorb_pointer.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -28,10 +29,15 @@ enum Routes {
   n18_custom_paint,
   n19_tooltip,
   n21_layout_builder,
+  n22_absorb_pointer,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n22_absorb_pointer.toLocation,
+      page: () => N22AbsorbPointer(),
+    ),
     GetPage(
       name: Routes.n21_layout_builder.toLocation,
       page: () => N21LayoutBuilderScreen(),

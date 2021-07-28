@@ -1,3 +1,5 @@
+# [2021-07-28] `AbsorbPointer` 可以吸收掉Pointer's events
+
 # [2021-07-27] `LayoutBuilder` 可以得知目前widget所在位置最大可能性，再來決定要如何安排該 Widget
 
 # [2021-07-22] 試了 `Tooltip` 與 `FittedBox`
