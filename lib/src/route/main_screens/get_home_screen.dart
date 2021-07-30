@@ -18,6 +18,13 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(Routes.n23_transform.toLocation),
+                  child: Text("N23 Transform")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n22_absorb_pointer.toLocation),
                   child: Text("N22 AbsorbPointer")),
             ),
