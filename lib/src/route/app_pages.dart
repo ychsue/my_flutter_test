@@ -10,6 +10,8 @@ import 'package:test2/src/route/main_screens/n19_20_tooltip_fitted_box_screen.da
 import 'package:test2/src/route/main_screens/n21_layout_builder.dart';
 import 'package:test2/src/route/main_screens/n22_absorb_pointer.dart';
 import 'package:test2/src/route/main_screens/n23_transform.dart';
+import 'package:test2/src/route/main_screens/n24_backdrop_filter.dart';
+import 'package:test2/src/route/main_screens/n25/n25_align.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -32,10 +34,20 @@ enum Routes {
   n21_layout_builder,
   n22_absorb_pointer,
   n23_transform,
+  n24_backdrop_filter,
+  n25_align,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n25_align.toLocation,
+      page: () => N25Align(),
+    ),
+    GetPage(
+      name: Routes.n24_backdrop_filter.toLocation,
+      page: () => N24BackdropFilterScreen(),
+    ),
     GetPage(
       name: Routes.n23_transform.toLocation,
       page: () => N23TransformScreen(),

@@ -1,3 +1,11 @@
+# [2021-08-04] 試玩了 `Align`，`Slider` 與 `.obs`
+用 `.obs` 搭配 `Obx` 就可以大致取代 `StatefulWidget` 的 state 了。
+當然，不含動畫。
+
+# [2021-08-03] `BackdropFilter` 試用
+1. Android 得將assets圖片的 `assets/` 也寫上才可以
+2. `BackdropFilter` 得包在 `ClipRect` 才可以改變套用filter的位置與大小
+
 # [2021-07-30] `Transform` 的 `transform` 所設定的 Matrix4
 1. 它的操作竟然是依矩陣的方式相乘的想法，而非操作的順序來想，所以，
 會整個排列相反。小心。 (這是以X(-90)Z(-90)Y(90)來看，最後，再利用透視投影到XY平面上，就可以了。所以，才會將此操作排在第一個。即
