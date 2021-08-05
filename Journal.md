@@ -1,3 +1,5 @@
+# [2021-08-05] 使用 `Positioned` inside `Stack` ，外加 `.obs`
+Stack的大小由非 Positioned 的 widget決定？ 嗯，這也合理。
 # [2021-08-04] 試玩了 `Align`，`Slider` 與 `.obs`
 用 `.obs` 搭配 `Obx` 就可以大致取代 `StatefulWidget` 的 state 了。
 當然，不含動畫。
