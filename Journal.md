@@ -1,3 +1,6 @@
+# [2021-08-10] 使用 `CurveTween` 與 `AnimatedBuilder` ，順便試用了 `InkWell`來給 `Text`加上 onTap 事件
+如標題。
+
 # [2021-08-05] 使用 `Positioned` inside `Stack` ，外加 `.obs`
 Stack的大小由非 Positioned 的 widget決定？ 嗯，這也合理。
 # [2021-08-04] 試玩了 `Align`，`Slider` 與 `.obs`
