@@ -1,3 +1,7 @@
+# [2021-08-11] 使用 `Dismissible`
+1. 若有宣告`background`，它的 `child`就不能只是 `Text` 了，得是別的物件，如 `ListTile`才行。
+2. `onDismissed` 裏頭一定要將該item 給移除掉，不然會報錯。
+
 # [2021-08-10] 使用 `CurveTween` 與 `AnimatedBuilder` ，順便試用了 `InkWell`來給 `Text`加上 onTap 事件
 如標題。
 
