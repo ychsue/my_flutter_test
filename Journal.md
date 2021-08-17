@@ -1,3 +1,6 @@
+# [2021-08-17] `SizedBox` 雖然好，但`double.infinity`未必能工作
+這時，可能要改為 `Flexible` 或 `Expanded`，如 [此篇StackOverflow所說](https://stackoverflow.com/questions/52442724/boxconstraints-forces-an-infinite-width)。
+
 # [2021-08-11] 使用 `Dismissible`
 1. 若有宣告`background`，它的 `child`就不能只是 `Text` 了，得是別的物件，如 `ListTile`才行。
 2. `onDismissed` 裏頭一定要將該item 給移除掉，不然會報錯。

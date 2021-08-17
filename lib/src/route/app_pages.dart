@@ -15,6 +15,7 @@ import 'package:test2/src/route/main_screens/n25/n25_align.dart';
 import 'package:test2/src/route/main_screens/n25/n26_positioned.dart';
 import 'package:test2/src/route/main_screens/n27_animated_builder.dart';
 import 'package:test2/src/route/main_screens/n28/n28_dismissible.dart';
+import 'package:test2/src/route/main_screens/n29_sized_box.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -42,10 +43,15 @@ enum Routes {
   n26_positioned,
   n27_animated_builder,
   n28_dismissible,
+  n29_sized_box,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n29_sized_box.toLocation,
+      page: () => N29SizedBoxScreen(),
+    ),
     GetPage(
       name: Routes.n28_dismissible.toLocation,
       page: () => N28DismissibleScreen(),
