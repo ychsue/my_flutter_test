@@ -1,4 +1,11 @@
+# [2021-08-18] `ValueListenableBuilder` 搭配 `animation` 很好用，但是，此例子我遇到了一個問題
+此問題就是明明我Route切換過去的頁面有 `Scaffold`，可是由它的 `Body` 引進的 `StatefulWidget` 卻不見該 `Scaffold`?
+且如 [此篇所說](https://github.com/flutter/flutter/issues/18399)，Parent 的 constraint 贏過了 `SizedBox` 的？
+只好用 `Align` 包起來來解決。
+好怪，還不知道原因。
+
 # [2021-08-17] `SizedBox` 雖然好，但`double.infinity`未必能工作
+
 這時，可能要改為 `Flexible` 或 `Expanded`，如 [此篇StackOverflow所說](https://stackoverflow.com/questions/52442724/boxconstraints-forces-an-infinite-width)。
 
 # [2021-08-11] 使用 `Dismissible`

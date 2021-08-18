@@ -17,6 +17,13 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
+                  onPressed: () => Get.toNamed(
+                      Routes.n30_value_listenable_builder.toLocation),
+                  child: Text("N30 ValueListenableBuilder")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
                   onPressed: () =>
                       Get.toNamed(Routes.n29_sized_box.toLocation),
                   child: Text("N29 SizedBox")),
