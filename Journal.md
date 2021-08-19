@@ -1,3 +1,6 @@
+# [2021-08-19] `Draggable` 很好用，
+看來 Obx 與 Builder 盡量不要混用，它已經 handle state 變化了。
+
 # [2021-08-18] `ValueListenableBuilder` 搭配 `animation` 很好用，但是，此例子我遇到了一個問題
 此問題就是明明我Route切換過去的頁面有 `Scaffold`，可是由它的 `Body` 引進的 `StatefulWidget` 卻不見該 `Scaffold`?
 且如 [此篇所說](https://github.com/flutter/flutter/issues/18399)，Parent 的 constraint 贏過了 `SizedBox` 的？
