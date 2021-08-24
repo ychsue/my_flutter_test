@@ -17,6 +17,13 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n32_animated_list.toLocation),
+                  child: Text("N32 AnimatedList")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
                   onPressed: () => Get.toNamed(
                       Routes.n31_draggable.toLocation),
                   child: Text("N31 Draggable")),

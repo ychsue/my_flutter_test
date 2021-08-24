@@ -1,3 +1,6 @@
+# [2021-08-24] `AnimatedList` 配合 `Dismissible`
+雖然看得出動畫，但是，還搞不大清楚怎麼讓動畫更生動。~~~~~
+
 # [2021-08-19] `Draggable` 很好用，
 看來 Obx 與 Builder 盡量不要混用，它已經 handle state 變化了。
 
