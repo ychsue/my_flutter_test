@@ -1,3 +1,8 @@
+# [2021-08-25] 試用了 `ResizableWidget` + `Flexible`
+好用，但有個缺點：
+1. separator 用滑鼠才容易點到，可能需要再加一些東西幫忙容易抓到
+2. 它裏頭的 `Flexible` loose 工作得怪怪的？
+
 # [2021-08-24] `AnimatedList` 配合 `Dismissible`
 雖然看得出動畫，但是，還搞不大清楚怎麼讓動畫更生動。~~~~~
 
