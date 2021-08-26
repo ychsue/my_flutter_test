@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class N34MediaQueryScreen extends StatelessWidget {
   const N34MediaQueryScreen({Key? key}) : super(key: key);
@@ -7,6 +8,8 @@ class N34MediaQueryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     assert(debugCheckHasMediaQuery(context));
     var media = MediaQuery.of(context);
+    var _key = GlobalKey();
+    var c = 0.0.obs;
     return Scaffold(
       appBar: AppBar(),
       body: ListView(
@@ -30,6 +33,30 @@ class N34MediaQueryScreen extends StatelessWidget {
           Text('viewPadding: ${media.viewPadding}'),
           Text('MQ::boldTextOverride: ${MediaQuery.boldTextOverride(context)}'),
           Text('MQ::highContrastOf: ${MediaQuery.highContrastOf(context)}'),
+          NotificationListener(
+            onNotification: (note) {
+              () async {
+                await Future.delayed(const Duration(microseconds: 0));
+                print("width: ${_key.currentContext?.size?.width}");
+                c.value = _key.currentContext?.size?.width ?? 0.0;
+              }();
+              return true;
+            },
+            child: SizeChangedLayoutNotifier(
+              child: Align(
+                child: Stack(
+                  children: [
+                    Container(
+                      key: _key,
+                      height: 100,
+                      color: Colors.yellow,
+                    ),
+                    Obx(() => Text("${c.value}")),
+                  ],
+                ),
+              ),
+            ),
+          ),
           Text(
               'MQ::platformBrightnessOf: ${MediaQuery.platformBrightnessOf(context)}'),
           Text(
