@@ -1,3 +1,9 @@
+# [2021-08-26] `MediaQuery` 好玩，
+不過，若要監看 widget's size changed，可能要用
+[此篇StackOverflow](https://stackoverflow.com/questions/49996166/how-to-listen-for-resize-events-in-a-flutter-animatedsize-widget) 講的辦法。
+1. 把要監看對象當作 `SizeChangedLayoutNotifier` 的 child
+2. 把整個 `SizeChangedLayoutNotifier` 當作 `NotificationListener` 的 child
+3. 再透過它的 `onNotification` callback 來搞定大小。
 # [2021-08-25] 試用了 `ResizableWidget` + `Flexible`
 好用，但有個缺點：
 1. separator 用滑鼠才容易點到，可能需要再加一些東西幫忙容易抓到
