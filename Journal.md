@@ -1,3 +1,5 @@
+# [2021-08-31] `Spacer` 可以用來自訂Column 與 Row 間的 Space 大小
+
 # [2021-08-26] `MediaQuery` 好玩，
 不過，若要監看 widget's size changed，可能要用
 [此篇StackOverflow](https://stackoverflow.com/questions/49996166/how-to-listen-for-resize-events-in-a-flutter-animatedsize-widget) 講的辦法。

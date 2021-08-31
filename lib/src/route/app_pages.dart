@@ -21,6 +21,7 @@ import 'package:test2/src/route/main_screens/n31_draggable.dart';
 import 'package:test2/src/route/main_screens/n32/n32_animated_list.dart';
 import 'package:test2/src/route/main_screens/n33_flexible.dart';
 import 'package:test2/src/route/main_screens/n34_media_query.dart';
+import 'package:test2/src/route/main_screens/n35_spacer.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -54,10 +55,15 @@ enum Routes {
   n32_animated_list,
   n33_flexible,
   n34_media_query,
+  n35_spacer,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n35_spacer.toLocation,
+      page: () => N35SpacerScreen(),
+    ),
     GetPage(
       name: Routes.n34_media_query.toLocation,
       page: () => N34MediaQueryScreen(),
