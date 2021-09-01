@@ -1,3 +1,7 @@
+# [2021-09-01] `InheritedWidget` 使用
+記得，它的值是 final，所以，每次改值，就是重新build 一個它。
+也因此，它下面的子代可以是 `StatelessWidget` 了。
+
 # [2021-08-31] `Spacer` 可以用來自訂Column 與 Row 間的 Space 大小
 
 # [2021-08-26] `MediaQuery` 好玩，
