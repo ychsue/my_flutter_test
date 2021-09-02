@@ -18,6 +18,13 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(Routes.n37_animated_icon.toLocation),
+                  child: Text("N37 AnimatedIcon")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n36_inherited_widget.toLocation),
                   child: Text("N36 InheritedWidget")),
             ),

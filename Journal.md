@@ -1,3 +1,6 @@
+# [2021-09-02] `AnimatedIcon` 
+`GridView.count` 只能設 `childAspectRatio`，就這樣。
+
 # [2021-09-01] `InheritedWidget` 使用
 記得，它的值是 final，所以，每次改值，就是重新build 一個它。
 也因此，它下面的子代可以是 `StatelessWidget` 了。
