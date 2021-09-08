@@ -24,6 +24,8 @@ import 'package:test2/src/route/main_screens/n34_media_query.dart';
 import 'package:test2/src/route/main_screens/n35_spacer.dart';
 import 'package:test2/src/route/main_screens/n36/n36_inherited_widget.dart';
 import 'package:test2/src/route/main_screens/n37_animated_icon.dart';
+import 'package:test2/src/route/main_screens/n38_aspect_ratio.dart';
+import 'package:test2/src/route/main_screens/n39_limited_box.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -60,10 +62,20 @@ enum Routes {
   n35_spacer,
   n36_inherited_widget,
   n37_animated_icon,
+  n38_aspect_ratio,
+  n39_limited_box,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n39_limited_box.toLocation,
+      page: () => N39LimitedBoxScreen(),
+    ),
+    GetPage(
+      name: Routes.n38_aspect_ratio.toLocation,
+      page: () => N38AspectRatioScreen(),
+    ),
     GetPage(
       name: Routes.n37_animated_icon.toLocation,
       page: () => N37AnimatedIconScreen(),

@@ -1,5 +1,10 @@
+# [2021-09-08] `AspectRatio` 與 `LimitedBox`
+`AspectRatio` 其父項不可強制要求size，否則無效。
+而 `LimitedBox` 則在父項對其子項無界時才會啟用，很多錯誤都得靠它來幫忙了。但，這 `maxWidth` 怎麼定才好呢？
+
 # [2021-09-02] `AnimatedIcon` 
 `GridView.count` 只能設 `childAspectRatio`，就這樣。
+[如此篇所述](https://stackoverflow.com/questions/48405123/how-to-set-custom-height-for-widget-in-gridview-in-flutter)。
 
 # [2021-09-01] `InheritedWidget` 使用
 記得，它的值是 final，所以，每次改值，就是重新build 一個它。
