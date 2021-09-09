@@ -1,3 +1,6 @@
+# [2021-09-09] `Placeholder`
+這是用來設定Layout時暫代用的widget，也有可能用在東西還載不下來時使用吧？
+
 # [2021-09-08] `AspectRatio` 與 `LimitedBox`
 `AspectRatio` 其父項不可強制要求size，否則無效。
 而 `LimitedBox` 則在父項對其子項無界時才會啟用，很多錯誤都得靠它來幫忙了。但，這 `maxWidth` 怎麼定才好呢？
