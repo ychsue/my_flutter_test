@@ -1,3 +1,6 @@
+# [2021-09-15] `RichText` 與 `ReorderableListView` 都很好用。
+不過， `ReorderableListView` 在 Web 版 不能利用長按來移動。(目前Flutter 2.2.3)。
+
 # [2021-09-09] `Placeholder`
 這是用來設定Layout時暫代用的widget，也有可能用在東西還載不下來時使用吧？
 
