@@ -1,3 +1,6 @@
+# [2021-09-17] `AnimatedSwitcher` 與 `AnimatedPositioned`
+以後可以使用。
+
 # [2021-09-15] `RichText` 與 `ReorderableListView` 都很好用。
 不過， `ReorderableListView` 在 Web 版 不能利用長按來移動。(目前Flutter 2.2.3)。
 
