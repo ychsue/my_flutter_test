@@ -1,3 +1,6 @@
+# [2021-09-22] `AnimatedPadding` 與 `IndexedStack` 
+嗯，可以簡化許多動作。
+
 # [2021-09-17] `AnimatedSwitcher` 與 `AnimatedPositioned`
 以後可以使用。
 

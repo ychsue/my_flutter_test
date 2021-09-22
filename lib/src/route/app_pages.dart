@@ -31,6 +31,7 @@ import 'package:test2/src/route/main_screens/n41_rich_text.dart';
 import 'package:test2/src/route/main_screens/n42_reorderable_list_view.dart';
 import 'package:test2/src/route/main_screens/n43_animated_switcher.dart';
 import 'package:test2/src/route/main_screens/n44_animated_positioned.dart';
+import 'package:test2/src/route/main_screens/n45_n46_animated_padding_and_indexed_stack.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -74,10 +75,15 @@ enum Routes {
   n42_reorderable_list_view,
   n43_animated_switcher,
   n44_animated_positioned,
+  n45_n46_animated_padding_and_indexed_stack,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n45_n46_animated_padding_and_indexed_stack.toLocation,
+      page: () => N45N46AnimatedPaddingAndIndexedStackScreen(),
+    ),
     GetPage(
       name: Routes.n44_animated_positioned.toLocation,
       page: () => N44AnimatedPositionedScreen(),
