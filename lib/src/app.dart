@@ -16,6 +16,7 @@ App() => GetMaterialApp(
       defaultTransition: Transition.fade,
       // initialBinding: SplashBinding(),
       getPages: AppPages.pages,
+      // showSemanticsDebugger: true,
       // home: HomeScreen(),
     );
 

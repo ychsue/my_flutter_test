@@ -1,3 +1,10 @@
+# [2021-09-24] 怪怪的 `Semantics`，但對於視障者應該很重要
+它好像沒作用，但如果在 `MaterialApp` 裡宣告
+``` dart
+      showSemanticsDebugger: true,
+```
+就可以作用了，感覺很像windows 在使用 narrator 時的樣子。
+
 # [2021-09-22] `AnimatedPadding` 與 `IndexedStack` 
 嗯，可以簡化許多動作。
 
