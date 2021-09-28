@@ -1,3 +1,9 @@
+# [2021-09-28] `ConstrainedBox`
+能給予約束條件，嗯，有可能可以透過 controller 來設定 `Column` 等 widgets 的約束，
+但，直接binding 到某個 widget 的寬與高，幾乎都會遇到conflict。用async 可以嗎？
+依據[此篇](https://stackoverflow.com/questions/61222544/how-to-detect-overflow-in-widgets) 也不好。
+裏頭有講到overflow 的解決法。
+
 # [2021-09-24] 怪怪的 `Semantics`，但對於視障者應該很重要
 它好像沒作用，但如果在 `MaterialApp` 裡宣告
 ``` dart

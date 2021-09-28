@@ -17,6 +17,13 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n48_constrained_box.toLocation),
+                  child: Text("N48 ConstrainedBox")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
                   onPressed: () => Get.toNamed(Routes.n47_semantics.toLocation),
                   child: Text("N47 Semantics")),
             ),
