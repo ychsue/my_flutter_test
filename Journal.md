@@ -1,3 +1,7 @@
+# [2021-09-29] `Stack` 
+還是很傷腦筋於Grid 或說 Flex 中有Flex的情形，感覺很碰運氣，不是真懂。
+[參考此文](https://stackoverflow.com/questions/49943272/flutter-gridview-in-column-whats-solution)
+
 # [2021-09-28] `ConstrainedBox`
 能給予約束條件，嗯，有可能可以透過 controller 來設定 `Column` 等 widgets 的約束，
 但，直接binding 到某個 widget 的寬與高，幾乎都會遇到conflict。用async 可以嗎？
