@@ -1,3 +1,6 @@
+# [2021-09-30] `AnimatedOpacity`
+試驗結果：`Container` 的 `color` 部分，設定 `padding` 並不會改變其大小，要使用 `margin`才行。
+
 # [2021-09-29] `Stack` 
 還是很傷腦筋於Grid 或說 Flex 中有Flex的情形，感覺很碰運氣，不是真懂。
 [參考此文](https://stackoverflow.com/questions/49943272/flutter-gridview-in-column-whats-solution)
