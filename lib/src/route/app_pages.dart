@@ -36,6 +36,7 @@ import 'package:test2/src/route/main_screens/n47_semantics.dart';
 import 'package:test2/src/route/main_screens/n48_constrained_box.dart';
 import 'package:test2/src/route/main_screens/n49_stack.dart';
 import 'package:test2/src/route/main_screens/n50_animated_opacity.dart';
+import 'package:test2/src/route/main_screens/n51_fractionally_sized_box.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -84,10 +85,15 @@ enum Routes {
   n48_constrained_box,
   n49_stack,
   n50_animated_opacity,
+  n51_fractionally_sized_box,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n51_fractionally_sized_box.toLocation,
+      page: () => N51FractionallySizedBoxScreen(),
+    ),
     GetPage(
       name: Routes.n50_animated_opacity.toLocation,
       page: () => N50AnimatedOpacityScreen(),

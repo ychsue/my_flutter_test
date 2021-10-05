@@ -18,6 +18,13 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(Routes.n51_fractionally_sized_box.toLocation),
+                  child: Text("N51 FractionallySizedBox")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n50_animated_opacity.toLocation),
                   child: Text("N50 AnimatedOpacity")),
             ),

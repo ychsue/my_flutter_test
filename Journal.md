@@ -1,3 +1,6 @@
+# [2021-10-05] `FractionallySizedBox`
+若將它包在 `Flexible` 裏頭，為其本該有的大小再乘以該值。
+
 # [2021-09-30] `AnimatedOpacity`
 試驗結果：`Container` 的 `color` 部分，設定 `padding` 並不會改變其大小，要使用 `margin`才行。
 
