@@ -37,6 +37,8 @@ import 'package:test2/src/route/main_screens/n48_constrained_box.dart';
 import 'package:test2/src/route/main_screens/n49_stack.dart';
 import 'package:test2/src/route/main_screens/n50_animated_opacity.dart';
 import 'package:test2/src/route/main_screens/n51_fractionally_sized_box.dart';
+import 'package:test2/src/route/main_screens/n52_53_list_view_n_list_tile.dart';
+import 'package:test2/src/route/main_screens/n54_n55_container_n_selectable_text.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -86,10 +88,20 @@ enum Routes {
   n49_stack,
   n50_animated_opacity,
   n51_fractionally_sized_box,
+  n52_53_list_view_n_list_tile,
+  n54_n55_container_n_selectable_text,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n54_n55_container_n_selectable_text.toLocation,
+      page: () => N54N55ContainerNSelectableTextScreen(),
+    ),
+    GetPage(
+      name: Routes.n52_53_list_view_n_list_tile.toLocation,
+      page: () => N52N53ListViewNListTileScreen(),
+    ),
     GetPage(
       name: Routes.n51_fractionally_sized_box.toLocation,
       page: () => N51FractionallySizedBoxScreen(),

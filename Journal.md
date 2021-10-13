@@ -1,3 +1,6 @@
+# [2021-10-13] `Container` & `SelectableText`
+`Container` 給內文加添許多有用的變化，而 `SelectableText` 則可以讓文字可選、可複製等。
+
 # [2021-10-05] `FractionallySizedBox`
 若將它包在 `Flexible` 裏頭，為其本該有的大小再乘以該值。
 
