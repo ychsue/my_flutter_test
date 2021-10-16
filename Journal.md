@@ -1,3 +1,5 @@
+# [2021-10-16] `DataTable` 的 sort 不會真的排序，排序還是要靠自己。
+
 # [2021-10-13] `Container` & `SelectableText`
 `Container` 給內文加添許多有用的變化，而 `SelectableText` 則可以讓文字可選、可複製等。
 
