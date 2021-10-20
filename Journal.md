@@ -1,3 +1,6 @@
+# [2021-10-20] `Slider` 與 `AlertDialog`
+也看了 `CupertinoAlertDialog` ，果然是 iOS型的
+
 # [2021-10-16] `DataTable` 的 sort 不會真的排序，排序還是要靠自己。
 
 # [2021-10-13] `Container` & `SelectableText`

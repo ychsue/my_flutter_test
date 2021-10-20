@@ -40,6 +40,8 @@ import 'package:test2/src/route/main_screens/n51_fractionally_sized_box.dart';
 import 'package:test2/src/route/main_screens/n52_53_list_view_n_list_tile.dart';
 import 'package:test2/src/route/main_screens/n54_n55_container_n_selectable_text.dart';
 import 'package:test2/src/route/main_screens/n56_data_table.dart';
+import 'package:test2/src/route/main_screens/n57_slider.dart';
+import 'package:test2/src/route/main_screens/n58/n58_alert_dialog.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -92,10 +94,20 @@ enum Routes {
   n52_53_list_view_n_list_tile,
   n54_n55_container_n_selectable_text,
   n56_data_table,
+  n57_slider,
+  n58_alert_dialog,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n58_alert_dialog.toLocation,
+      page: () => N58AlertDialogScreen(),
+    ),
+    GetPage(
+      name: Routes.n57_slider.toLocation,
+      page: () => N57SliderScreen(),
+    ),
     GetPage(
       name: Routes.n56_data_table.toLocation,
       page: () => N56DataTableScreen(),
