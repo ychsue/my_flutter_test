@@ -18,6 +18,13 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(Routes.n59_animated_cross_fade.toLocation),
+                  child: Text("N59 AnimatedCrossFade")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n58_alert_dialog.toLocation),
                   child: Text("N58 AlertDialog")),
             ),

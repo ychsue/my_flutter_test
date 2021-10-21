@@ -1,3 +1,6 @@
+# [2021-10-21] `AnimatedCrossFade`
+用 layoutBuilder 來控制顯現方式(如果不滿意預設的話)
+
 # [2021-10-20] `Slider` 與 `AlertDialog`
 也看了 `CupertinoAlertDialog` ，果然是 iOS型的
 

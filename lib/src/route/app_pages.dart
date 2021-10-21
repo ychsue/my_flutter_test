@@ -42,6 +42,7 @@ import 'package:test2/src/route/main_screens/n54_n55_container_n_selectable_text
 import 'package:test2/src/route/main_screens/n56_data_table.dart';
 import 'package:test2/src/route/main_screens/n57_slider.dart';
 import 'package:test2/src/route/main_screens/n58/n58_alert_dialog.dart';
+import 'package:test2/src/route/main_screens/n59/n59_animated_cross_fade.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -96,10 +97,15 @@ enum Routes {
   n56_data_table,
   n57_slider,
   n58_alert_dialog,
+  n59_animated_cross_fade,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n59_animated_cross_fade.toLocation,
+      page: () => N59AnimatedCrossFadeScreen(),
+    ),
     GetPage(
       name: Routes.n58_alert_dialog.toLocation,
       page: () => N58AlertDialogScreen(),
