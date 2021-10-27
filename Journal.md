@@ -1,3 +1,9 @@
+# [2021-10-27] `DraggableScrollableSheet` 與 `ColorFiltered`
+根據 [此篇FAQ](https://github.com/flutter/flutter/issues/88866)，直到目前為止[2021-10-27]， `ColorFiltered` 在Web上依然
+無法正常運作。
+它會將 `Scaffold` 整個 `body` 連同它自己都套用，可是，卻讓其他的 widgets 都看不見。
+Android 上是正常的。
+
 # [2021-10-21] `AnimatedCrossFade`
 用 layoutBuilder 來控制顯現方式(如果不滿意預設的話)
 

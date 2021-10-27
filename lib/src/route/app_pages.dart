@@ -43,11 +43,13 @@ import 'package:test2/src/route/main_screens/n56_data_table.dart';
 import 'package:test2/src/route/main_screens/n57_slider.dart';
 import 'package:test2/src/route/main_screens/n58/n58_alert_dialog.dart';
 import 'package:test2/src/route/main_screens/n59/n59_animated_cross_fade.dart';
+import 'package:test2/src/route/main_screens/n61_color_filtered.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
 
 import 'main_screens/get_home_screen.dart';
+import 'main_screens/n60_draggable_scrollable_sheet.dart';
 
 enum Routes {
   home,
@@ -98,10 +100,20 @@ enum Routes {
   n57_slider,
   n58_alert_dialog,
   n59_animated_cross_fade,
+  n60_graggable_scrollable_sheet,
+  n61_color_filtered,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n61_color_filtered.toLocation,
+      page: () => N61ColorFilteredScreen(),
+    ),
+    GetPage(
+      name: Routes.n60_graggable_scrollable_sheet.toLocation,
+      page: () => N60DraggableScrollableSheetScreen(),
+    ),
     GetPage(
       name: Routes.n59_animated_cross_fade.toLocation,
       page: () => N59AnimatedCrossFadeScreen(),
