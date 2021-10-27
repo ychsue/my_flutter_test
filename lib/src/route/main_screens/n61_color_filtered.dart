@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/// 此 Widget [ColorFiltered] 在 Web 上有問題。所以程式殘念中。
+///
 class N61ColorFilteredScreen extends StatelessWidget {
   const N61ColorFilteredScreen({Key? key}) : super(key: key);
 
