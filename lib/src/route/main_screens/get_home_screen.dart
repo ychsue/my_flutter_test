@@ -18,6 +18,13 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(Routes.n62_toggle_buttons.toLocation),
+                  child: Text("N62 ToggleButtons")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n61_color_filtered.toLocation),
                   child: Text("N61 ColorFiltered")),
             ),

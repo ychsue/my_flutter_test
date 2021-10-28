@@ -50,6 +50,7 @@ import 'package:test2/src/route/main_screens/welcome_screen.dart';
 
 import 'main_screens/get_home_screen.dart';
 import 'main_screens/n60_draggable_scrollable_sheet.dart';
+import 'main_screens/n62_toggle_buttons.dart';
 
 enum Routes {
   home,
@@ -102,10 +103,15 @@ enum Routes {
   n59_animated_cross_fade,
   n60_graggable_scrollable_sheet,
   n61_color_filtered,
+  n62_toggle_buttons,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n62_toggle_buttons.toLocation,
+      page: () => N62ToggleButtonsScreen(),
+    ),
     GetPage(
       name: Routes.n61_color_filtered.toLocation,
       page: () => N61ColorFilteredScreen(),
