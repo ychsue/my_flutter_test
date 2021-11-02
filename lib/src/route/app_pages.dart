@@ -44,6 +44,7 @@ import 'package:test2/src/route/main_screens/n57_slider.dart';
 import 'package:test2/src/route/main_screens/n58/n58_alert_dialog.dart';
 import 'package:test2/src/route/main_screens/n59/n59_animated_cross_fade.dart';
 import 'package:test2/src/route/main_screens/n61_color_filtered.dart';
+import 'package:test2/src/route/main_screens/n63/n63_cupertino_action_sheet.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -104,10 +105,15 @@ enum Routes {
   n60_graggable_scrollable_sheet,
   n61_color_filtered,
   n62_toggle_buttons,
+  n63_cupertino_action_sheet,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n63_cupertino_action_sheet.toLocation,
+      page: () => N63CupertinoActionSheetScreen(),
+    ),
     GetPage(
       name: Routes.n62_toggle_buttons.toLocation,
       page: () => N62ToggleButtonsScreen(),
