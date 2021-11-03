@@ -18,6 +18,14 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(
+                      Routes.n64_tween_animation_builder.toLocation),
+                  child: Text("N64 TweenAnimationBuilder")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n63_cupertino_action_sheet.toLocation),
                   child: Text("N63 CupertinoActionSheet")),
             ),

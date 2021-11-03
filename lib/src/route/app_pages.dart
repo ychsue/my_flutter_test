@@ -52,6 +52,7 @@ import 'package:test2/src/route/main_screens/welcome_screen.dart';
 import 'main_screens/get_home_screen.dart';
 import 'main_screens/n60_draggable_scrollable_sheet.dart';
 import 'main_screens/n62_toggle_buttons.dart';
+import 'main_screens/n64_tween_animation_builder.dart';
 
 enum Routes {
   home,
@@ -106,10 +107,15 @@ enum Routes {
   n61_color_filtered,
   n62_toggle_buttons,
   n63_cupertino_action_sheet,
+  n64_tween_animation_builder,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n64_tween_animation_builder.toLocation,
+      page: () => N64TweenAnimationBuilderScreen(),
+    ),
     GetPage(
       name: Routes.n63_cupertino_action_sheet.toLocation,
       page: () => N63CupertinoActionSheetScreen(),
