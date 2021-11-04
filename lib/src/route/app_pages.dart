@@ -45,6 +45,7 @@ import 'package:test2/src/route/main_screens/n58/n58_alert_dialog.dart';
 import 'package:test2/src/route/main_screens/n59/n59_animated_cross_fade.dart';
 import 'package:test2/src/route/main_screens/n61_color_filtered.dart';
 import 'package:test2/src/route/main_screens/n63/n63_cupertino_action_sheet.dart';
+import 'package:test2/src/route/main_screens/n65_image.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -108,10 +109,15 @@ enum Routes {
   n62_toggle_buttons,
   n63_cupertino_action_sheet,
   n64_tween_animation_builder,
+  n65_image,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n65_image.toLocation,
+      page: () => N65ImageScreen(),
+    ),
     GetPage(
       name: Routes.n64_tween_animation_builder.toLocation,
       page: () => N64TweenAnimationBuilderScreen(),

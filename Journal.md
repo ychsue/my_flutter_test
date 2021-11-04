@@ -1,3 +1,6 @@
+# [2021-11-04] `Image` 
+測試 `progress` 但，不曉得如何運作。
+
 # [2021-11-03] `TweenAnimationBuilder` 可以免去使用 controller
 不過，小心， `ColorTween` 允許 null 值, 所以要用 <Color?>
 
