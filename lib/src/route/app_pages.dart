@@ -46,6 +46,7 @@ import 'package:test2/src/route/main_screens/n59/n59_animated_cross_fade.dart';
 import 'package:test2/src/route/main_screens/n61_color_filtered.dart';
 import 'package:test2/src/route/main_screens/n63/n63_cupertino_action_sheet.dart';
 import 'package:test2/src/route/main_screens/n65_image.dart';
+import 'package:test2/src/route/main_screens/n66_default_tab_bar_view.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -110,10 +111,15 @@ enum Routes {
   n63_cupertino_action_sheet,
   n64_tween_animation_builder,
   n65_image,
+  n66_default_tab_bar_view,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n66_default_tab_bar_view.toLocation,
+      page: () => N66DefaultTabBarViewScreen(),
+    ),
     GetPage(
       name: Routes.n65_image.toLocation,
       page: () => N65ImageScreen(),

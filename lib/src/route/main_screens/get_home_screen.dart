@@ -17,6 +17,14 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n66_default_tab_bar_view.toLocation),
+                  child:
+                      Text("N66 DefaultTabController, TabBar and TabBarView")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
                   onPressed: () => Get.toNamed(Routes.n65_image.toLocation),
                   child: Text("N65 Image")),
             ),
