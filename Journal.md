@@ -1,3 +1,11 @@
+# [2021-11-10] `Drawer`
+讓 Drawer 很容易建構到頁面中。
+
+歐，記得使用GlobalKey來調用 Scaffold 的 state
+``` dart
+_sKey.currentState?.openEndDrawer()
+```
+
 # [2021-11-09] `DefaultTabController`, `Tab`, `TabBar` & `TabBarView`
 嗯，很好用。
 
