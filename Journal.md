@@ -1,5 +1,6 @@
 # [2021-11-11] `SnackBar`
 等一下想試試利用 `ScaffoldMessenger` 來達成。
+實驗的結果是可以的。只要將 `Scaffold` 當作 `ScaffoldMessenger` 的 child，再傳入相應的 `key` 即可。
 
 # [2021-11-10] `Drawer`
 讓 Drawer 很容易建構到頁面中。
