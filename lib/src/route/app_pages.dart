@@ -48,6 +48,7 @@ import 'package:test2/src/route/main_screens/n63/n63_cupertino_action_sheet.dart
 import 'package:test2/src/route/main_screens/n65_image.dart';
 import 'package:test2/src/route/main_screens/n66_default_tab_bar_view.dart';
 import 'package:test2/src/route/main_screens/n67_drawer.dart';
+import 'package:test2/src/route/main_screens/n68_snack_bar.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -114,10 +115,15 @@ enum Routes {
   n65_image,
   n66_default_tab_bar_view,
   n67_drawer,
+  n68_snack_bar,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n68_snack_bar.toLocation,
+      page: () => N68SnackBarScreen(),
+    ),
     GetPage(
       name: Routes.n67_drawer.toLocation,
       page: () => N67DrawerScreen(),

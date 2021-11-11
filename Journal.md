@@ -1,3 +1,6 @@
+# [2021-11-11] `SnackBar`
+等一下想試試利用 `ScaffoldMessenger` 來達成。
+
 # [2021-11-10] `Drawer`
 讓 Drawer 很容易建構到頁面中。
 
