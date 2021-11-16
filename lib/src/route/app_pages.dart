@@ -49,6 +49,7 @@ import 'package:test2/src/route/main_screens/n65_image.dart';
 import 'package:test2/src/route/main_screens/n66_default_tab_bar_view.dart';
 import 'package:test2/src/route/main_screens/n67_drawer.dart';
 import 'package:test2/src/route/main_screens/n68_snack_bar.dart';
+import 'package:test2/src/route/main_screens/n69_list_wheel_scroll_view.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -116,10 +117,15 @@ enum Routes {
   n66_default_tab_bar_view,
   n67_drawer,
   n68_snack_bar,
+  n69_list_wheel_scroll_view,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n69_list_wheel_scroll_view.toLocation,
+      page: () => N69ListWheelScrollViewScreen(),
+    ),
     GetPage(
       name: Routes.n68_snack_bar.toLocation,
       page: () => N68SnackBarScreen(),

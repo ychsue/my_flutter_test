@@ -17,6 +17,13 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n69_list_wheel_scroll_view.toLocation),
+                  child: Text("N69 ListWheelScrollView")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
                   onPressed: () => Get.toNamed(Routes.n68_snack_bar.toLocation),
                   child: Text("N68 SnackBar")),
             ),
