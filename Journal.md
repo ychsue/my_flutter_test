@@ -1,3 +1,8 @@
+# [2021-11-18] `ShaderMask` and `NotificationListener`
+1. 關於 `ImageShader` 的用法，請參見 [此文](https://stackoverflow.com/questions/61966819/how-to-create-imageshader-in-flutter).
+
+2. 關於自定義的 `Notification` 則只要設定初始化時給定的值，到時，`dispatch` 就會將它連同該值推送到 `NotificationListener<MyNotification>` 了。
+
 # [2021-11-16] `ListWheelScrollView` 有趣
 
 # [2021-11-11] `SnackBar`

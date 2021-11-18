@@ -18,6 +18,20 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(Routes.n71_notification_listener.toLocation),
+                  child: Text("N71 NotificationListener")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n70_shader_mask.toLocation),
+                  child: Text("N70 ShaderMask")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n69_list_wheel_scroll_view.toLocation),
                   child: Text("N69 ListWheelScrollView")),
             ),

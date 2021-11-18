@@ -50,6 +50,7 @@ import 'package:test2/src/route/main_screens/n66_default_tab_bar_view.dart';
 import 'package:test2/src/route/main_screens/n67_drawer.dart';
 import 'package:test2/src/route/main_screens/n68_snack_bar.dart';
 import 'package:test2/src/route/main_screens/n69_list_wheel_scroll_view.dart';
+import 'package:test2/src/route/main_screens/n71_notification_listener.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -58,6 +59,7 @@ import 'main_screens/get_home_screen.dart';
 import 'main_screens/n60_draggable_scrollable_sheet.dart';
 import 'main_screens/n62_toggle_buttons.dart';
 import 'main_screens/n64_tween_animation_builder.dart';
+import 'main_screens/n70_shader_mask.dart';
 
 enum Routes {
   home,
@@ -118,10 +120,20 @@ enum Routes {
   n67_drawer,
   n68_snack_bar,
   n69_list_wheel_scroll_view,
+  n70_shader_mask,
+  n71_notification_listener,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n71_notification_listener.toLocation,
+      page: () => N71NotificationListenerScreen(),
+    ),
+    GetPage(
+      name: Routes.n70_shader_mask.toLocation,
+      page: () => N70ShaderMaskScreen(),
+    ),
     GetPage(
       name: Routes.n69_list_wheel_scroll_view.toLocation,
       page: () => N69ListWheelScrollViewScreen(),
