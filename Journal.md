@@ -1,3 +1,5 @@
+# [2021-11-23] `Builder` 能確保父項的 widget tree 建構完成後才取其 context
+
 # [2021-11-18] `ShaderMask` and `NotificationListener`
 1. 關於 `ImageShader` 的用法，請參見 [此文](https://stackoverflow.com/questions/61966819/how-to-create-imageshader-in-flutter).
 
