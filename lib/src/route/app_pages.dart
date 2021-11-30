@@ -52,6 +52,9 @@ import 'package:test2/src/route/main_screens/n68_snack_bar.dart';
 import 'package:test2/src/route/main_screens/n69_list_wheel_scroll_view.dart';
 import 'package:test2/src/route/main_screens/n71_notification_listener.dart';
 import 'package:test2/src/route/main_screens/n72_builder.dart';
+import 'package:test2/src/route/main_screens/n73/n73_clip_path.dart';
+import 'package:test2/src/route/main_screens/n74_progress_indicator.dart';
+import 'package:test2/src/route/main_screens/n75_divider.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -124,10 +127,25 @@ enum Routes {
   n70_shader_mask,
   n71_notification_listener,
   n72_builder,
+  n73_clip_path,
+  n74_progress_indicator,
+  n75_divider,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n75_divider.toLocation,
+      page: () => N75DividerScreen(),
+    ),
+    GetPage(
+      name: Routes.n74_progress_indicator.toLocation,
+      page: () => N74ProgressIndicatorScreen(),
+    ),
+    GetPage(
+      name: Routes.n73_clip_path.toLocation,
+      page: () => N73ClipPathScreen(),
+    ),
     GetPage(
       name: Routes.n72_builder.toLocation,
       page: () => N72BuilderScreen(),

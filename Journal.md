@@ -1,3 +1,5 @@
+# [2021-11-30] `ProgressIndicator` 與 `Divider`
+
 # [2021-11-23] `Builder` 能確保父項的 widget tree 建構完成後才取其 context
 
 # [2021-11-18] `ShaderMask` and `NotificationListener`
