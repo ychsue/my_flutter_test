@@ -1,3 +1,6 @@
+# [2021-12-01] `IgnorePointer`
+此Widget 可以讓我們忽略包在其下的所有Pointer(手指) 動作
+
 # [2021-11-30] `ProgressIndicator` 與 `Divider`
 
 # [2021-11-23] `Builder` 能確保父項的 widget tree 建構完成後才取其 context

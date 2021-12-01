@@ -18,6 +18,13 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(Routes.n76_ignore_pointer.toLocation),
+                  child: Text("N76 IgnorePointer")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n75_divider.toLocation),
                   child: Text("N75 Divider")),
             ),
