@@ -1,3 +1,6 @@
+# [2021-12-02] `CupertinoActivityIndicator`
+Cupertino version of progress indicator.
+
 # [2021-12-01] `IgnorePointer`
 此Widget 可以讓我們忽略包在其下的所有Pointer(手指) 動作
 

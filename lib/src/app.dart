@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 // import 'package:flutter_bloc/flutter_bloc.dart';
 // import 'package:test2/src/route/cubit/my_page.dart';
 // import 'package:test2/src/route/cubit/pages_retriever_cubit.dart';
@@ -9,7 +8,7 @@ import 'package:get/get.dart';
 import 'core/theme/app_theme.dart';
 import 'route/app_pages.dart';
 
-App() => GetMaterialApp(
+app() => GetMaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: Routes.home.toLocation,
       theme: appThemeData,

@@ -56,6 +56,7 @@ import 'package:test2/src/route/main_screens/n73/n73_clip_path.dart';
 import 'package:test2/src/route/main_screens/n74_progress_indicator.dart';
 import 'package:test2/src/route/main_screens/n75_divider.dart';
 import 'package:test2/src/route/main_screens/n76_ignore_pointer.dart';
+import 'package:test2/src/route/main_screens/n77_cupertino_activity_indicator.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -132,10 +133,15 @@ enum Routes {
   n74_progress_indicator,
   n75_divider,
   n76_ignore_pointer,
+  n77_cupertino_activity_indicator,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n77_cupertino_activity_indicator.toLocation,
+      page: () => N77CupertinoActivityIndicatorScreen(),
+    ),
     GetPage(
       name: Routes.n76_ignore_pointer.toLocation,
       page: () => N76IgnorePointerScreen(),

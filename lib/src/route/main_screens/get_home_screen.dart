@@ -18,6 +18,14 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(
+                      Routes.n77_cupertino_activity_indicator.toLocation),
+                  child: Text("N77 CupertinoActivityIndicator")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n76_ignore_pointer.toLocation),
                   child: Text("N76 IgnorePointer")),
             ),
