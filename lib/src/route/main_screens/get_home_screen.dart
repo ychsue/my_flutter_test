@@ -18,7 +18,52 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
-                      Get.toNamed(
+                      Get.toNamed(Routes.n84_url_launcher.toLocation),
+                  child: Text("N84 package url_launcher")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () => Get.toNamed(Routes.n83_async_pkg.toLocation),
+                  child: Text("N83 Async Package")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n82_about_dialog.toLocation),
+                  child: Text("N82 AboutDialog")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n81_checkbox_list_tile.toLocation),
+                  child: Text("N81 CheckboxListTile")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () => Get.toNamed(Routes.n80_padding.toLocation),
+                  child: Text("N80 Padding")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n79_animated_widget.toLocation),
+                  child: Text("N79 AnimatedWidget")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () => Get.toNamed(Routes.n78_clip_oval.toLocation),
+                  child: Text("N78 ClipOval")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () => Get.toNamed(
                       Routes.n77_cupertino_activity_indicator.toLocation),
                   child: Text("N77 CupertinoActivityIndicator")),
             ),
@@ -32,8 +77,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(Routes.n75_divider.toLocation),
+                  onPressed: () => Get.toNamed(Routes.n75_divider.toLocation),
                   child: Text("N75 Divider")),
             ),
             Container(
@@ -52,8 +96,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(Routes.n72_builder.toLocation),
+                  onPressed: () => Get.toNamed(Routes.n72_builder.toLocation),
                   child: Text("N72 Builder")),
             ),
             Container(
@@ -86,8 +129,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(Routes.n67_drawer.toLocation),
+                  onPressed: () => Get.toNamed(Routes.n67_drawer.toLocation),
                   child: Text("N67 Drawer")),
             ),
             Container(
@@ -107,8 +149,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(
+                  onPressed: () => Get.toNamed(
                       Routes.n64_tween_animation_builder.toLocation),
                   child: Text("N64 TweenAnimationBuilder")),
             ),
@@ -163,8 +204,8 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () => Get.toNamed(
-                      Routes.n56_data_table.toLocation),
+                  onPressed: () =>
+                      Get.toNamed(Routes.n56_data_table.toLocation),
                   child: Text("N56 DataTable")),
             ),
             Container(
@@ -198,8 +239,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(Routes.n49_stack.toLocation),
+                  onPressed: () => Get.toNamed(Routes.n49_stack.toLocation),
                   child: Text("N49 Stack")),
             ),
             Container(
@@ -218,8 +258,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(Routes
+                  onPressed: () => Get.toNamed(Routes
                       .n45_n46_animated_padding_and_indexed_stack.toLocation),
                   child: Text("N45 AnimatedPadding & N46 IndexedStack")),
             ),
@@ -288,8 +327,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(Routes.n35_spacer.toLocation),
+                  onPressed: () => Get.toNamed(Routes.n35_spacer.toLocation),
                   child: Text("N35 Spacer")),
             ),
             Container(
@@ -302,8 +340,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(Routes.n33_flexible.toLocation),
+                  onPressed: () => Get.toNamed(Routes.n33_flexible.toLocation),
                   child: Text("N33 Flexible")),
             ),
             Container(
@@ -316,8 +353,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () => Get.toNamed(
-                      Routes.n31_draggable.toLocation),
+                  onPressed: () => Get.toNamed(Routes.n31_draggable.toLocation),
                   child: Text("N31 Draggable")),
             ),
             Container(
@@ -330,8 +366,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(Routes.n29_sized_box.toLocation),
+                  onPressed: () => Get.toNamed(Routes.n29_sized_box.toLocation),
                   child: Text("N29 SizedBox")),
             ),
             Container(
@@ -358,8 +393,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(Routes.n25_align.toLocation),
+                  onPressed: () => Get.toNamed(Routes.n25_align.toLocation),
                   child: Text("N25 Align")),
             ),
             Container(
@@ -372,8 +406,7 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
-                  onPressed: () =>
-                      Get.toNamed(Routes.n23_transform.toLocation),
+                  onPressed: () => Get.toNamed(Routes.n23_transform.toLocation),
                   child: Text("N23 Transform")),
             ),
             Container(
@@ -396,7 +429,6 @@ class GetHomeScreen extends StatelessWidget {
                   onPressed: () => Get.toNamed(Routes.n19_tooltip.toLocation),
                   child: Text("N19 Tooltip")),
             ),
-
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(

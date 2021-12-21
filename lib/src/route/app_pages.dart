@@ -57,6 +57,13 @@ import 'package:test2/src/route/main_screens/n74_progress_indicator.dart';
 import 'package:test2/src/route/main_screens/n75_divider.dart';
 import 'package:test2/src/route/main_screens/n76_ignore_pointer.dart';
 import 'package:test2/src/route/main_screens/n77_cupertino_activity_indicator.dart';
+import 'package:test2/src/route/main_screens/n78_clip_oval.dart';
+import 'package:test2/src/route/main_screens/n79/n79_animated_widget.dart';
+import 'package:test2/src/route/main_screens/n80_padding.dart';
+import 'package:test2/src/route/main_screens/n81_checkbox_list_tile.dart';
+import 'package:test2/src/route/main_screens/n82_about_dialog.dart';
+import 'package:test2/src/route/main_screens/n83_async_pkg.dart';
+import 'package:test2/src/route/main_screens/n84_url_launcher_pkg.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -134,10 +141,45 @@ enum Routes {
   n75_divider,
   n76_ignore_pointer,
   n77_cupertino_activity_indicator,
+  n78_clip_oval,
+  n79_animated_widget,
+  n80_padding,
+  n81_checkbox_list_tile,
+  n82_about_dialog,
+  n83_async_pkg,
+  n84_url_launcher,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n84_url_launcher.toLocation,
+      page: () => N84UrlLauncherPackage(),
+    ),
+    GetPage(
+      name: Routes.n83_async_pkg.toLocation,
+      page: () => N83AsyncPackage(),
+    ),
+    GetPage(
+      name: Routes.n82_about_dialog.toLocation,
+      page: () => N82AboutDialogScreen(),
+    ),
+    GetPage(
+      name: Routes.n81_checkbox_list_tile.toLocation,
+      page: () => N81CheckboxListTileScreen(),
+    ),
+    GetPage(
+      name: Routes.n80_padding.toLocation,
+      page: () => N80PaddingScreen(),
+    ),
+    GetPage(
+      name: Routes.n79_animated_widget.toLocation,
+      page: () => N79AnimatedWidgetScreen(),
+    ),
+    GetPage(
+      name: Routes.n78_clip_oval.toLocation,
+      page: () => N78ClipOvalScreen(),
+    ),
     GetPage(
       name: Routes.n77_cupertino_activity_indicator.toLocation,
       page: () => N77CupertinoActivityIndicatorScreen(),
