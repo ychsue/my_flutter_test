@@ -64,6 +64,9 @@ import 'package:test2/src/route/main_screens/n81_checkbox_list_tile.dart';
 import 'package:test2/src/route/main_screens/n82_about_dialog.dart';
 import 'package:test2/src/route/main_screens/n83_async_pkg.dart';
 import 'package:test2/src/route/main_screens/n84_url_launcher_pkg.dart';
+import 'package:test2/src/route/main_screens/n85_path_provider_pkg.dart';
+import 'package:test2/src/route/main_screens/n86/n86_freezed_pkg.dart';
+import 'package:test2/src/route/main_screens/n87_gesture_detector.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -148,10 +151,25 @@ enum Routes {
   n82_about_dialog,
   n83_async_pkg,
   n84_url_launcher,
+  n85_path_provider_pkg,
+  n86_freezed_pkg,
+  n87_gesture_detector,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n87_gesture_detector.toLocation,
+      page: () => N87GestureDetectorScreen(),
+    ),
+    GetPage(
+      name: Routes.n86_freezed_pkg.toLocation,
+      page: () => N86FreezedPackage(),
+    ),
+    GetPage(
+      name: Routes.n85_path_provider_pkg.toLocation,
+      page: () => N85PathProviderPackage(),
+    ),
     GetPage(
       name: Routes.n84_url_launcher.toLocation,
       page: () => N84UrlLauncherPackage(),

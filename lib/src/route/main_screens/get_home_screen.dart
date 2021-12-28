@@ -18,6 +18,27 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(Routes.n87_gesture_detector.toLocation),
+                  child: Text("N87 GestureDetector")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n86_freezed_pkg.toLocation),
+                  child: Text("N86 Freezed Package")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n85_path_provider_pkg.toLocation),
+                  child: Text("N85 Path_Provider package")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n84_url_launcher.toLocation),
                   child: Text("N84 package url_launcher")),
             ),

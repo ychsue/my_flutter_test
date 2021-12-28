@@ -1,3 +1,5 @@
+# [2021-12-28] 試了 `path_provider`（給非Web來取得常用目錄）和 `freezed` (自動產生toString等方法的 boilplate 產生器) 兩個 packages 還有 `GestureDetector` (用來取得各樣的觸控)
+
 # [2021-12-21] 歐，好多，已經到n84 `url_launcher` package 了
 
 # [2021-12-02] `CupertinoActivityIndicator`
