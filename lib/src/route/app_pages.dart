@@ -67,6 +67,7 @@ import 'package:test2/src/route/main_screens/n84_url_launcher_pkg.dart';
 import 'package:test2/src/route/main_screens/n85_path_provider_pkg.dart';
 import 'package:test2/src/route/main_screens/n86/n86_freezed_pkg.dart';
 import 'package:test2/src/route/main_screens/n87_gesture_detector.dart';
+import 'package:test2/src/route/main_screens/n88_cached_network_image_pkg.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -154,10 +155,15 @@ enum Routes {
   n85_path_provider_pkg,
   n86_freezed_pkg,
   n87_gesture_detector,
+  n88_cached_network_image,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n88_cached_network_image.toLocation,
+      page: () => N88CachedNetworkImagePackage(),
+    ),
     GetPage(
       name: Routes.n87_gesture_detector.toLocation,
       page: () => N87GestureDetectorScreen(),
