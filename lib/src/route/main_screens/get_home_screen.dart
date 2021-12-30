@@ -17,6 +17,12 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
+                  onPressed: () => Get.toNamed(Routes.n89_theme.toLocation),
+                  child: Text("N89 Theme")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
                   onPressed: () =>
                       Get.toNamed(Routes.n88_cached_network_image.toLocation),
                   child: Text("N88 CachedNetworkImage")),

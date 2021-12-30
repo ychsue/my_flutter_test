@@ -1,3 +1,6 @@
+# [2021-12-30] `Theme`
+原來，`Theme` 也像 `GetX`，或說 `Provider` 那樣是一層一層的往下傳遞Data。
+
 # [2021-12-29] `CachedNetworkImage` 可以用在 Web 上
 
 # [2021-12-28] 試了 `path_provider`（給非Web來取得常用目錄）和 `freezed` (自動產生toString等方法的 boilplate 產生器) 兩個 packages 還有 `GestureDetector` (用來取得各樣的觸控)
