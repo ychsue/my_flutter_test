@@ -17,6 +17,13 @@ class GetHomeScreen extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(8.0),
               child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n90_tab_page_selector.toLocation),
+                  child: Text("N90 TabPageSelector")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
                   onPressed: () => Get.toNamed(Routes.n89_theme.toLocation),
                   child: Text("N89 Theme")),
             ),
