@@ -70,6 +70,9 @@ import 'package:test2/src/route/main_screens/n87_gesture_detector.dart';
 import 'package:test2/src/route/main_screens/n88_cached_network_image_pkg.dart';
 import 'package:test2/src/route/main_screens/n89_theme.dart';
 import 'package:test2/src/route/main_screens/n90_tab_page_selector.dart';
+import 'package:test2/src/route/main_screens/n91_flow.dart';
+import 'package:test2/src/route/main_screens/n92_font_awesome.dart';
+import 'package:test2/src/route/main_screens/n93_refresh_indicator.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -160,10 +163,25 @@ enum Routes {
   n88_cached_network_image,
   n89_theme,
   n90_tab_page_selector,
+  n91_flow,
+  n92_font_awesome,
+  n93_refresh_indicator,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n93_refresh_indicator.toLocation,
+      page: () => N93RefreshIndicatorScreen(),
+    ),
+    GetPage(
+      name: Routes.n92_font_awesome.toLocation,
+      page: () => N92FontAwesomeScreen(),
+    ),
+    GetPage(
+      name: Routes.n91_flow.toLocation,
+      page: () => N91FlowScreen(),
+    ),
     GetPage(
       name: Routes.n90_tab_page_selector.toLocation,
       page: () => N90TabPageSelectorScreen(),
