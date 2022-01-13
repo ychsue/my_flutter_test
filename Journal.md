@@ -1,3 +1,7 @@
+# [2022-01-13] `package:html` 與 `HeroMode`
+看來，`Hero`要怎麼飛還得學習，不過，確定可以利用
+`Get.to()` 與 `Get.back()` 來簡易達成。 
+
 # [2022-01-11] `Flow`, `Font_Awesome package` 與 `RefreshIndicator`
 而RefreshIndicator 用在 Web 上時，得自己設定 scrollController
 有人建議若要能夠由bottom觸發更新的話（它只能由 top 觸發），那麼，請使用 `ScrollController` 來監測與自己寫吧。

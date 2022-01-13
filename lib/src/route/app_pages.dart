@@ -73,6 +73,8 @@ import 'package:test2/src/route/main_screens/n90_tab_page_selector.dart';
 import 'package:test2/src/route/main_screens/n91_flow.dart';
 import 'package:test2/src/route/main_screens/n92_font_awesome.dart';
 import 'package:test2/src/route/main_screens/n93_refresh_indicator.dart';
+import 'package:test2/src/route/main_screens/n94_html_pkg.dart';
+import 'package:test2/src/route/main_screens/n95/n95_hero_mode.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -166,10 +168,20 @@ enum Routes {
   n91_flow,
   n92_font_awesome,
   n93_refresh_indicator,
+  n94_html_pkg,
+  n95_hero_mode,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n95_hero_mode.toLocation,
+      page: () => N95HeroModeScreen(),
+    ),
+    GetPage(
+      name: Routes.n94_html_pkg.toLocation,
+      page: () => N94HTMLPackage(),
+    ),
     GetPage(
       name: Routes.n93_refresh_indicator.toLocation,
       page: () => N93RefreshIndicatorScreen(),
