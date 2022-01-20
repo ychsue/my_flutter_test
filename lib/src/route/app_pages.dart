@@ -75,6 +75,9 @@ import 'package:test2/src/route/main_screens/n92_font_awesome.dart';
 import 'package:test2/src/route/main_screens/n93_refresh_indicator.dart';
 import 'package:test2/src/route/main_screens/n94_html_pkg.dart';
 import 'package:test2/src/route/main_screens/n95/n95_hero_mode.dart';
+import 'package:test2/src/route/main_screens/n96_sensors_plus_pkg.dart';
+import 'package:test2/src/route/main_screens/n97_mouse_region.dart';
+import 'package:test2/src/route/main_screens/n98_animated_text_kit_pkg.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -170,10 +173,25 @@ enum Routes {
   n93_refresh_indicator,
   n94_html_pkg,
   n95_hero_mode,
+  n96_sensors_plus_pkg,
+  n97_mouse_region,
+  n98_animated_text_kit_pkg,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n98_animated_text_kit_pkg.toLocation,
+      page: () => N98AnimatedTextKitPkg(),
+    ),
+    GetPage(
+      name: Routes.n97_mouse_region.toLocation,
+      page: () => N97MouseRegionScreen(),
+    ),
+    GetPage(
+      name: Routes.n96_sensors_plus_pkg.toLocation,
+      page: () => N96SensorsPlusPkg(),
+    ),
     GetPage(
       name: Routes.n95_hero_mode.toLocation,
       page: () => N95HeroModeScreen(),

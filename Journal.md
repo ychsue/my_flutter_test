@@ -1,3 +1,5 @@
+# [2022-01-20] `sensors_plus_pkg`, `MouseRegion` & `AnimatedTextKit`
+嗯，有用，尤其 `AnimatedTextKit` 很快就可以用到。
 # [2022-01-13] `package:html` 與 `HeroMode`
 看來，`Hero`要怎麼飛還得學習，不過，確定可以利用
 `Get.to()` 與 `Get.back()` 來簡易達成。 
