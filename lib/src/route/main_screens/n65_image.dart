@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class N65ImageScreen extends StatelessWidget {
   const N65ImageScreen({Key? key}) : super(key: key);
@@ -8,15 +9,16 @@ class N65ImageScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final _imageUrl1 =
         'http://2.bp.blogspot.com/-vNNnH4K0nZk/TpMsD8cFHvI/AAAAAAAAAeM/r6-5dB1WiY8/s640/tullymore2.jpg';
-    // 'https://thymeandlove.com/wp-content/uploads/2017/01/DSC_2030-FG13.jpg';
     final Rxn<double> cProgress = Rxn<double>();
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Image Widget"),
+      ),
       body: Column(
         children: [
           Expanded(
               child: Image.asset(
-            'assets/images/tulip.jpg',
+            'assets/images/101.jpg',
             semanticLabel: "鬱金香",
             color: Colors.red,
             colorBlendMode: BlendMode.saturation,
@@ -30,7 +32,7 @@ class N65ImageScreen extends StatelessWidget {
                   cProgress.value = null;
                 else {
                   cProgress.value =
-                      tBytes / evt!.cumulativeBytesLoaded.toDouble();
+                      evt!.cumulativeBytesLoaded.toDouble() / tBytes;
                 }
                 return child;
               },
@@ -38,6 +40,10 @@ class N65ImageScreen extends StatelessWidget {
           ),
           LinearProgressIndicator(
             value: cProgress.value,
+          ),
+          ElevatedButton(
+            onPressed: () => launch(_imageUrl1),
+            child: Text("Web Image Source"),
           ),
         ],
       ),

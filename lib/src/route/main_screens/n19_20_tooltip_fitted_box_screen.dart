@@ -18,7 +18,7 @@ class N19TooltipScreen extends StatelessWidget {
                     height: 300,
                     width: 900,
                     child: FittedBox(
-                      child: Image.asset('images/tulip.jpg'),
+                      child: Image.asset('images/101.jpg'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -31,7 +31,7 @@ class N19TooltipScreen extends StatelessWidget {
                     gradient: const LinearGradient(
                         colors: [Colors.red, Colors.amber]),
                     // image: DecorationImage(
-                    //   image: Image.asset('images/tulip.jpg').image,
+                    //   image: Image.asset('images/101.jpg').image,
                     //   fit: BoxFit.cover,
                     // ),
                   ),

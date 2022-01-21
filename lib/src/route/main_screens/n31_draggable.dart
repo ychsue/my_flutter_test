@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class N31DraggableScreen extends StatelessWidget {
   const N31DraggableScreen({Key? key}) : super(key: key);
@@ -22,25 +23,43 @@ class N31DraggableScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Draggable(
-                      data: url1,
-                      feedback: Opacity(
-                        child: Image.network(url1),
-                        opacity: 0.8,
-                      ),
-                      child: Image.network(url1),
-                      childWhenDragging: Opacity(
-                        child: Image.network(url1),
-                        opacity: 0.4,
-                      ),
-                    ),
-                    Draggable(
-                        data: url2,
-                        feedback: Opacity(
-                          child: Image.network(url2),
-                          opacity: 0.4,
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Draggable(
+                          data: url1,
+                          feedback: Opacity(
+                            child: Image.network(url1),
+                            opacity: 0.8,
+                          ),
+                          child: Image.network(url1),
+                          childWhenDragging: Opacity(
+                            child: Image.network(url1),
+                            opacity: 0.4,
+                          ),
                         ),
-                        child: Image.network(url2))
+                        ElevatedButton(
+                          onPressed: () => launch(url1),
+                          child: Text("Source"),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Draggable(
+                            data: url2,
+                            feedback: Opacity(
+                              child: Image.network(url2),
+                              opacity: 0.4,
+                            ),
+                            child: Image.network(url2)),
+                        ElevatedButton(
+                          onPressed: () => launch(url2),
+                          child: Text("Source"),
+                        ),
+                      ],
+                    )
                   ],
                 ),
               ),

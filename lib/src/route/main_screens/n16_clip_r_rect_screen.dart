@@ -19,7 +19,7 @@ class N16ClipRRectScreen extends StatelessWidget {
       appBar: AppBar(),
       body: Center(
         child: Obx(() => ClipRRect(
-              child: Image(image: AssetImage("images/tulip.jpg")),
+              child: Image(image: AssetImage("images/101.jpg")),
               borderRadius: BorderRadius.all(Radius.circular(_ctr.radius)),
             )),
       ),

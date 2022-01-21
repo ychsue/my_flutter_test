@@ -27,7 +27,7 @@ class N26PositionedScreen extends StatelessWidget {
                     left: _left.value,
                     width: _width.value,
                     height: _height.value,
-                    child: Image.asset('assets/images/tulip.jpg'),
+                    child: Image.asset('assets/images/101.jpg'),
                   )),
             ],
           ),

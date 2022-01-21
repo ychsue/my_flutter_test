@@ -1,3 +1,7 @@
+# [202-01-21] 放到GitHub 上，且能自動部署
+1. [放到github上的教學](https://powerupwebdev.medium.com/deploy-your-projects-on-github-using-visual-studio-code-and-git-5f7221b272ca)
+2. [此篇](https://zonble.medium.com/use-github-pages-to-host-your-flutter-web-app-as-an-example-of-your-flutter-package-cb7b5b726eb1) 講到如何利用 `workflow.yml` 檔案來自動布置所要的 `GitHub Pages`
+
 # [2022-01-20] `sensors_plus_pkg`, `MouseRegion` & `AnimatedTextKit`
 嗯，有用，尤其 `AnimatedTextKit` 很快就可以用到。
 # [2022-01-13] `package:html` 與 `HeroMode`

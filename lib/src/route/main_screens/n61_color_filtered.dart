@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 /// 此 Widget [ColorFiltered] 在 Web 上有問題。所以程式殘念中。
 ///
@@ -13,10 +14,12 @@ class N61ColorFilteredScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Kindacode.com'),
+        title:
+            Text('ColorFiltered: from Kindacode.com, may not work in Web one.'),
       ),
       body: Column(
         children: [
+          Text("ColorFiltered Widget "),
           // The original image
           Expanded(
               child: Image.network(
@@ -38,6 +41,19 @@ class N61ColorFilteredScreen extends StatelessWidget {
                 key: ValueKey("img2"),
               ),
             ),
+          ),
+        ],
+      ),
+      floatingActionButton: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          ElevatedButton(
+            onPressed: () => launch(_imageUrl1),
+            child: Text("Img Source 1"),
+          ),
+          ElevatedButton(
+            onPressed: () => launch(_imageUrl2),
+            child: Text("Img Source 2"),
           ),
         ],
       ),

@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_navigation/src/routes/default_transitions.dart';
 import 'package:test2/src/route/main_screens/n32/user_controller.dart';
 import 'package:test2/src/route/main_screens/n32/user_model.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class N32AnimatedListScreen extends StatelessWidget {
   const N32AnimatedListScreen({Key? key}) : super(key: key);
@@ -84,6 +85,22 @@ class N32AnimatedListScreen extends StatelessWidget {
                   },
                   icon: Icon(Icons.add),
                   label: Text("Add One User"),
+                ),
+                Expanded(
+                  child: Obx(
+                    () => ListView(
+                      children: List.generate(
+                        c.users.length,
+                        (index) => Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: ElevatedButton(
+                            onPressed: () => launch(c.users[index].imgUrl),
+                            child: Text("Source $index"),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),

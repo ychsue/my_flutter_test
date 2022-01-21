@@ -221,6 +221,10 @@ abstract class AppPages {
       page: () => N89ThemeScreen(),
     ),
     GetPage(
+      name: Routes.n88_cached_network_image.toLocation,
+      page: () => N88CachedNetworkImagePackage(),
+    ),
+    GetPage(
       name: Routes.n87_gesture_detector.toLocation,
       page: () => N87GestureDetectorScreen(),
     ),

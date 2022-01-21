@@ -1,16 +1,16 @@
-# test2
+# My Test of Flutter
 
-A new Flutter project.
+I'm learning how to use Flutter. 
+Therefore, I've tried to test 3 widgets or packages per week which were described in [this YouTube Series from the Flutter team](https://www.youtube.com/playlist?list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG).
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone this repository to your local directory.
+2. `cd` to this repository's directory and run
 
-A few resources to get you started if this is your first Flutter project:
+```sh
+flutter pub get
+```
+3. run it (You can use [VSCode](https://code.visualstudio.com/) to test it.)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Or you might see its demo on [https://ychsue.github.io/my_flutter_test/](https://ychsue.github.io/my_flutter_test/).

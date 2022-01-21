@@ -9,6 +9,7 @@ import 'core/theme/app_theme.dart';
 import 'route/app_pages.dart';
 
 app() => GetMaterialApp(
+      title: "My Test of Flutter",
       debugShowCheckedModeBanner: false,
       initialRoute: Routes.home.toLocation,
       theme: appThemeData,

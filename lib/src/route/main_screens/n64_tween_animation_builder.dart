@@ -20,7 +20,7 @@ class N64TweenAnimationBuilderScreen extends StatelessWidget {
       body: Obx(
         () => Container(
           child: TweenAnimationBuilder<Color?>(
-            child: Image.network(_imageUrl1),
+            child: Image.asset("assets/images/101.jpg"),
             duration: const Duration(seconds: 2),
             tween: ColorTween(begin: Colors.green, end: _colors[c.value]),
             builder: (BuildContext context, Color? value, Widget? child) {

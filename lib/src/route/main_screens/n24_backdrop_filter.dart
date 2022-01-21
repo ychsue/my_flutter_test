@@ -14,7 +14,7 @@ class N24BackdropFilterScreen extends StatelessWidget {
         child: Center(
           child: Stack(
             children: <Widget>[
-              Image.asset('assets/images/tulip.jpg'),
+              Image.asset('assets/images/101.jpg'),
               Positioned(
                 top: 20,
                 left: 100,
