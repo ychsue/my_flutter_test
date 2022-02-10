@@ -1,4 +1,9 @@
-# [202-01-21] 放到GitHub 上，且能自動部署
+# [2022-02-10] `connectivity_plus` 與 `Scrollbar`
+IMPORTANT:  `Scrollbar` 若沒有與 `ListView` 共用 controller 時會反應
+
+*The Scrollbar's ScrollController has no ScrollPosition attached.*
+
+# [2022-01-21] 放到GitHub 上，且能自動部署
 1. [放到github上的教學](https://powerupwebdev.medium.com/deploy-your-projects-on-github-using-visual-studio-code-and-git-5f7221b272ca)
 2. [此篇](https://zonble.medium.com/use-github-pages-to-host-your-flutter-web-app-as-an-example-of-your-flutter-package-cb7b5b726eb1) 講到如何利用 `workflow.yml` 檔案來自動布置所要的 `GitHub Pages`
 

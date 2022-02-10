@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:test2/src/route/main_screens/n100_scrollbar.dart';
 import 'package:test2/src/route/main_screens/n13_fadein_image_screen.dart';
 import 'package:test2/src/route/main_screens/n14_stream_builder_screen.dart';
 import 'package:test2/src/route/main_screens/n15_inherited_widget_screen.dart';
@@ -78,6 +79,7 @@ import 'package:test2/src/route/main_screens/n95/n95_hero_mode.dart';
 import 'package:test2/src/route/main_screens/n96_sensors_plus_pkg.dart';
 import 'package:test2/src/route/main_screens/n97_mouse_region.dart';
 import 'package:test2/src/route/main_screens/n98_animated_text_kit_pkg.dart';
+import 'package:test2/src/route/main_screens/n99_connectivity_plus_pkg.dart';
 import 'package:test2/src/route/main_screens/sliver_screen.dart';
 import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
@@ -176,10 +178,20 @@ enum Routes {
   n96_sensors_plus_pkg,
   n97_mouse_region,
   n98_animated_text_kit_pkg,
+  n99_connectivity_plus_pkg,
+  n100_scrollbar,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n100_scrollbar.toLocation,
+      page: () => N100ScrollbarScreen(),
+    ),
+    GetPage(
+      name: Routes.n99_connectivity_plus_pkg.toLocation,
+      page: () => N99ConnectivityPlusPkg(),
+    ),
     GetPage(
       name: Routes.n98_animated_text_kit_pkg.toLocation,
       page: () => N98AnimatedTextKitPkg(),
