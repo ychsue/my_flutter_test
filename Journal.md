@@ -1,3 +1,15 @@
+# [2022-02-17] `animations_pkg`, `Baseline`, `GetIt package`
+`GetIt` 與 `GetX` 有點像，但精簡許多，易用。
+
+# [2022-02-15] `slidable` package 很好用，我會用到。
+
+# [2022-02-15] `RotatedBox` 
+只能90度旋轉，不過，會重新計算Size。
+
+# [2022-02-11] `ExpansionPanel`
+`ExpansionPanelList` 一定得在無限高的 widget 裡，如`SingleChildScrollView`
+範例請見[此文](https://www.woolha.com/tutorials/flutter-using-expansionpanellist-widget-examples)。
+
 # [2022-02-10] `connectivity_plus` 與 `Scrollbar`
 IMPORTANT:  `Scrollbar` 若沒有與 `ListView` 共用 controller 時會反應
 

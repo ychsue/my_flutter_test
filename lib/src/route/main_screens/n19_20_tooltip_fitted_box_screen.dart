@@ -10,7 +10,7 @@ class N19TooltipScreen extends StatelessWidget {
         Text('This is a test'),
         Expanded(
           child: Scaffold(
-            appBar: AppBar(),
+            appBar: AppBar(title: Text("FittedBox and Tooltip")),
             body: Column(
               children: [
                 Container(

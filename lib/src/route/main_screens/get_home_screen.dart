@@ -18,6 +18,110 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(Routes.n115_page_view.toLocation),
+                  child: Text("N115 PageView")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () => Get.toNamed(Routes.n114_table.toLocation),
+                  child: Text("N114 Table")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n113_grid_view.toLocation),
+                  child: Text("N113 GridView")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n112_switch_list_tile.toLocation),
+                  child: Text("N112 SwitchListTile")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n111_location_pkg.toLocation),
+                  child: Text("N111 Location package")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n110_device_info_pkg.toLocation),
+                  child: Text("N110 Device_info_plus package")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n109_image_filtered.toLocation),
+                  child: Text("N109 ImageFiltered")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n108_badges_pkg.toLocation),
+                  child: Text("N108 Badge Package")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n107_physical_model.toLocation),
+                  child: Text("N107 PhysicalModel")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n106_get_it_pkg.toLocation),
+                  child: Text("N106 GetIt Package")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () => Get.toNamed(Routes.n105_baseline.toLocation),
+                  child: Text("N105 Baseline")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () => Get.toNamed(
+                      Routes.n104_animation_pkg_open_container.toLocation),
+                  child:
+                      Text("N104 Material Animations Package:: OpenContainer")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n103_slidable_pkg.toLocation),
+                  child: Text("N103 Slidable Package")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n102_rotated_box.toLocation),
+                  child: Text("N102 RotatedBox")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
+                      Get.toNamed(Routes.n101_expansion_panel.toLocation),
+                  child: Text("N101 ExpansionPanel and ExpansionPanelList")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n100_scrollbar.toLocation),
                   child: Text("N100 Scrollbar")),
             ),
@@ -286,7 +390,7 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () => Get.toNamed(
-                      Routes.n60_graggable_scrollable_sheet.toLocation),
+                      Routes.n60_draggable_scrollable_sheet.toLocation),
                   child: Text("N60 DraggableScrollableSheet")),
             ),
             Container(

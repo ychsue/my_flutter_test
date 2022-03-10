@@ -62,7 +62,9 @@ class SliverScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          title: Text("SliverAppBar"),
+        ),
         body: CustomScrollView(
           slivers: <Widget>[
             makeHeader('Header section 1'),

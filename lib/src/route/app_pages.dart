@@ -1,5 +1,18 @@
 import 'package:get/get.dart';
 import 'package:test2/src/route/main_screens/n100_scrollbar.dart';
+import 'package:test2/src/route/main_screens/n101_expansion_panel.dart';
+import 'package:test2/src/route/main_screens/n102_rotated_box.dart';
+import 'package:test2/src/route/main_screens/n103_slidable_pkg.dart';
+import 'package:test2/src/route/main_screens/n104_animations_pkg_open_container.dart';
+import 'package:test2/src/route/main_screens/n105_baseline.dart';
+import 'package:test2/src/route/main_screens/n106_get_it_pkg.dart';
+import 'package:test2/src/route/main_screens/n108_badges_pkg.dart';
+import 'package:test2/src/route/main_screens/n110_device_info_pkg.dart';
+import 'package:test2/src/route/main_screens/n111_location_pkg.dart';
+import 'package:test2/src/route/main_screens/n112_switch_list_tile.dart';
+import 'package:test2/src/route/main_screens/n113_grid_view.dart';
+import 'package:test2/src/route/main_screens/n114_table.dart';
+import 'package:test2/src/route/main_screens/n115_page_view.dart';
 import 'package:test2/src/route/main_screens/n13_fadein_image_screen.dart';
 import 'package:test2/src/route/main_screens/n14_stream_builder_screen.dart';
 import 'package:test2/src/route/main_screens/n15_inherited_widget_screen.dart';
@@ -85,6 +98,8 @@ import 'package:test2/src/route/main_screens/unknown_screen.dart';
 import 'package:test2/src/route/main_screens/welcome_screen.dart';
 
 import 'main_screens/get_home_screen.dart';
+import 'main_screens/n107_physical_model.dart';
+import 'main_screens/n109_image_filtered.dart';
 import 'main_screens/n60_draggable_scrollable_sheet.dart';
 import 'main_screens/n62_toggle_buttons.dart';
 import 'main_screens/n64_tween_animation_builder.dart';
@@ -139,7 +154,7 @@ enum Routes {
   n57_slider,
   n58_alert_dialog,
   n59_animated_cross_fade,
-  n60_graggable_scrollable_sheet,
+  n60_draggable_scrollable_sheet,
   n61_color_filtered,
   n62_toggle_buttons,
   n63_cupertino_action_sheet,
@@ -180,10 +195,85 @@ enum Routes {
   n98_animated_text_kit_pkg,
   n99_connectivity_plus_pkg,
   n100_scrollbar,
+  n101_expansion_panel,
+  n102_rotated_box,
+  n103_slidable_pkg,
+  n104_animation_pkg_open_container,
+  n105_baseline,
+  n106_get_it_pkg,
+  n107_physical_model,
+  n108_badges_pkg,
+  n109_image_filtered,
+  n110_device_info_pkg,
+  n111_location_pkg,
+  n112_switch_list_tile,
+  n113_grid_view,
+  n114_table,
+  n115_page_view,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n115_page_view.toLocation,
+      page: () => N115PageViewScreen(),
+    ),
+    GetPage(
+      name: Routes.n114_table.toLocation,
+      page: () => N114TableScreen(),
+    ),
+    GetPage(
+      name: Routes.n113_grid_view.toLocation,
+      page: () => N113GridViewScreen(),
+    ),
+    GetPage(
+      name: Routes.n112_switch_list_tile.toLocation,
+      page: () => N112SwitchListTileScreen(),
+    ),
+    GetPage(
+      name: Routes.n111_location_pkg.toLocation,
+      page: () => N111LocationPkg(),
+    ),
+    GetPage(
+      name: Routes.n110_device_info_pkg.toLocation,
+      page: () => N110DeviceInfoPlusPkg(),
+    ),
+    GetPage(
+      name: Routes.n109_image_filtered.toLocation,
+      page: () => N109ImageFilteredScreen(),
+    ),
+    GetPage(
+      name: Routes.n108_badges_pkg.toLocation,
+      page: () => N108BadgesPackage(),
+    ),
+    GetPage(
+      name: Routes.n107_physical_model.toLocation,
+      page: () => N107PhysicalModelScreen(),
+    ),
+    GetPage(
+      name: Routes.n106_get_it_pkg.toLocation,
+      page: () => N106GetItPkg(),
+    ),
+    GetPage(
+      name: Routes.n105_baseline.toLocation,
+      page: () => N105BaselineScreen(),
+    ),
+    GetPage(
+      name: Routes.n104_animation_pkg_open_container.toLocation,
+      page: () => N104OpenContainerScreen(),
+    ),
+    GetPage(
+      name: Routes.n103_slidable_pkg.toLocation,
+      page: () => N103SlidablePackage(),
+    ),
+    GetPage(
+      name: Routes.n102_rotated_box.toLocation,
+      page: () => N102RotatedBoxScreen(),
+    ),
+    GetPage(
+      name: Routes.n101_expansion_panel.toLocation,
+      page: () => N101ExpansionPanelScren(),
+    ),
     GetPage(
       name: Routes.n100_scrollbar.toLocation,
       page: () => N100ScrollbarScreen(),
@@ -345,7 +435,7 @@ abstract class AppPages {
       page: () => N61ColorFilteredScreen(),
     ),
     GetPage(
-      name: Routes.n60_graggable_scrollable_sheet.toLocation,
+      name: Routes.n60_draggable_scrollable_sheet.toLocation,
       page: () => N60DraggableScrollableSheetScreen(),
     ),
     GetPage(
