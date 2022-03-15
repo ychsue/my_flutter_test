@@ -1,3 +1,6 @@
+# [2022-03-15] `FloatingActionButton`
+試用了它在 `Scaffold` 中用的 floatingActionButtonLocation 來設定其位置
+
 # [2022-02-17] `animations_pkg`, `Baseline`, `GetIt package`
 `GetIt` 與 `GetX` 有點像，但精簡許多，易用。
 

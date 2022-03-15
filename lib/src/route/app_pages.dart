@@ -13,6 +13,7 @@ import 'package:test2/src/route/main_screens/n112_switch_list_tile.dart';
 import 'package:test2/src/route/main_screens/n113_grid_view.dart';
 import 'package:test2/src/route/main_screens/n114_table.dart';
 import 'package:test2/src/route/main_screens/n115_page_view.dart';
+import 'package:test2/src/route/main_screens/n116_floating_action_button.dart';
 import 'package:test2/src/route/main_screens/n13_fadein_image_screen.dart';
 import 'package:test2/src/route/main_screens/n14_stream_builder_screen.dart';
 import 'package:test2/src/route/main_screens/n15_inherited_widget_screen.dart';
@@ -210,10 +211,15 @@ enum Routes {
   n113_grid_view,
   n114_table,
   n115_page_view,
+  n116_floating_action_button,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n116_floating_action_button.toLocation,
+      page: () => N116FloatingActionButtonScreen(),
+    ),
     GetPage(
       name: Routes.n115_page_view.toLocation,
       page: () => N115PageViewScreen(),

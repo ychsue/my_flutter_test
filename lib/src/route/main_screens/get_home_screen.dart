@@ -18,6 +18,14 @@ class GetHomeScreen extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: TextButton(
                   onPressed: () =>
+                      Get.toNamed(
+                      Routes.n116_floating_action_button.toLocation),
+                  child: Text("N116 FloatingActionButton")),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () =>
                       Get.toNamed(Routes.n115_page_view.toLocation),
                   child: Text("N115 PageView")),
             ),
