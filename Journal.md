@@ -1,3 +1,5 @@
+# [2022-03-22] Add a search bar for home page
+
 # [2022-03-15] `FloatingActionButton`
 試用了它在 `Scaffold` 中用的 floatingActionButtonLocation 來設定其位置
 

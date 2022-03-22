@@ -130,7 +130,7 @@ enum Routes {
   n29_sized_box,
   n30_value_listenable_builder,
   n31_draggable,
-  n32_animated_list,
+  n32_animated_list_with_fade_animation,
   n33_flexible,
   n34_media_query,
   n35_spacer,
@@ -144,7 +144,7 @@ enum Routes {
   n43_animated_switcher,
   n44_animated_positioned,
   n45_n46_animated_padding_and_indexed_stack,
-  n47_semantics,
+  n47_semantics_with_scaffold_messenger,
   n48_constrained_box,
   n49_stack,
   n50_animated_opacity,
@@ -163,7 +163,7 @@ enum Routes {
   n65_image,
   n66_default_tab_bar_view,
   n67_drawer,
-  n68_snack_bar,
+  n68_snack_bar_with_scaffold_messenger,
   n69_list_wheel_scroll_view,
   n70_shader_mask,
   n71_notification_listener,
@@ -180,7 +180,7 @@ enum Routes {
   n82_about_dialog,
   n83_async_pkg,
   n84_url_launcher,
-  n85_path_provider_pkg,
+  n85_path_provider_pkg_with_future_builder,
   n86_freezed_pkg,
   n87_gesture_detector,
   n88_cached_network_image,
@@ -341,7 +341,7 @@ abstract class AppPages {
       page: () => N86FreezedPackage(),
     ),
     GetPage(
-      name: Routes.n85_path_provider_pkg.toLocation,
+      name: Routes.n85_path_provider_pkg_with_future_builder.toLocation,
       page: () => N85PathProviderPackage(),
     ),
     GetPage(
@@ -409,7 +409,7 @@ abstract class AppPages {
       page: () => N69ListWheelScrollViewScreen(),
     ),
     GetPage(
-      name: Routes.n68_snack_bar.toLocation,
+      name: Routes.n68_snack_bar_with_scaffold_messenger.toLocation,
       page: () => N68SnackBarScreen(),
     ),
     GetPage(
@@ -485,7 +485,7 @@ abstract class AppPages {
       page: () => N48ConstrainedBoxScreen(),
     ),
     GetPage(
-      name: Routes.n47_semantics.toLocation,
+      name: Routes.n47_semantics_with_scaffold_messenger.toLocation,
       page: () => N47SemanticsScreen(),
     ),
     GetPage(
@@ -541,7 +541,7 @@ abstract class AppPages {
       page: () => N33FlexibleScreen(),
     ),
     GetPage(
-      name: Routes.n32_animated_list.toLocation,
+      name: Routes.n32_animated_list_with_fade_animation.toLocation,
       page: () => N32AnimatedListScreen(),
     ),
     GetPage(
