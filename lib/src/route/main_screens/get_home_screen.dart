@@ -77,13 +77,13 @@ class _GetHomeScreenState extends State<GetHomeScreen> {
                             Get.toNamed(Routes.n115_page_view.toLocation),
                         child: Text("N115 PageView")),
                   ),
-                if (checkQuery(Routes.n114_table.toString()))
+                if (checkQuery(Routes.n114_table_with_wrap.toString()))
                   Container(
                     margin: EdgeInsets.all(8.0),
                     child: TextButton(
                         onPressed: () =>
-                            Get.toNamed(Routes.n114_table.toLocation),
-                        child: Text("N114 Table")),
+                            Get.toNamed(Routes.n114_table_with_wrap.toLocation),
+                        child: Text("N114 Table with Wrap")),
                   ),
                 if (checkQuery(Routes.n113_grid_view.toString()))
                   Container(
@@ -133,13 +133,15 @@ class _GetHomeScreenState extends State<GetHomeScreen> {
                             Get.toNamed(Routes.n108_badges_pkg.toLocation),
                         child: Text("N108 Badge Package")),
                   ),
-                if (checkQuery(Routes.n107_physical_model.toString()))
+                if (checkQuery(
+                    Routes.n107_physical_model_with_opacity.toString()))
                   Container(
                     margin: EdgeInsets.all(8.0),
                     child: TextButton(
                         onPressed: () =>
-                            Get.toNamed(Routes.n107_physical_model.toLocation),
-                        child: Text("N107 PhysicalModel")),
+                            Get.toNamed(
+                            Routes.n107_physical_model_with_opacity.toLocation),
+                        child: Text("N107 PhysicalModel with Opacity")),
                   ),
                 if (checkQuery(Routes.n106_get_it_pkg.toString()))
                   Container(
@@ -734,13 +736,14 @@ class _GetHomeScreenState extends State<GetHomeScreen> {
                             .n32_animated_list_with_fade_animation.toLocation),
                         child: Text("N32 AnimatedList")),
                   ),
-                if (checkQuery(Routes.n31_draggable.toString()))
+                if (checkQuery(Routes.n31_draggable_with_opacity.toString()))
                   Container(
                     margin: EdgeInsets.all(8.0),
                     child: TextButton(
                         onPressed: () =>
-                            Get.toNamed(Routes.n31_draggable.toLocation),
-                        child: Text("N31 Draggable")),
+                            Get.toNamed(
+                            Routes.n31_draggable_with_opacity.toLocation),
+                        child: Text("N31 Draggable with Opacity")),
                   ),
                 if (checkQuery(Routes.n30_value_listenable_builder.toString()))
                   Container(
@@ -862,13 +865,17 @@ class _GetHomeScreenState extends State<GetHomeScreen> {
                             Routes.n15_inherited_widget_screen.toLocation),
                         child: Text("N15 InheritedWidget")),
                   ),
-                if (checkQuery(Routes.n14_stream_builder.toString()))
+                if (checkQuery(Routes.n14_stream_builder_with_animated_container
+                    .toString()))
                   Container(
                     margin: EdgeInsets.all(8.0),
                     child: TextButton(
                         onPressed: () =>
-                            Get.toNamed(Routes.n14_stream_builder.toLocation),
-                        child: Text("N14 StreamBuilder")),
+                            Get.toNamed(Routes
+                            .n14_stream_builder_with_animated_container
+                            .toLocation),
+                        child:
+                            Text("N14 StreamBuilder with AnimatedContainer")),
                   ),
                 if (checkQuery(Routes.n13_fadein_image.toString()))
                   Container(

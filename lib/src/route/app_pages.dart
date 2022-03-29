@@ -112,7 +112,7 @@ enum Routes {
   welcome,
   sliver_screen,
   n13_fadein_image,
-  n14_stream_builder,
+  n14_stream_builder_with_animated_container,
   n15_inherited_widget_screen,
   n16_clip_r_rect,
   n17_hero_screen,
@@ -129,7 +129,7 @@ enum Routes {
   n28_dismissible,
   n29_sized_box,
   n30_value_listenable_builder,
-  n31_draggable,
+  n31_draggable_with_opacity,
   n32_animated_list_with_fade_animation,
   n33_flexible,
   n34_media_query,
@@ -202,14 +202,14 @@ enum Routes {
   n104_animation_pkg_open_container,
   n105_baseline,
   n106_get_it_pkg,
-  n107_physical_model,
+  n107_physical_model_with_opacity,
   n108_badges_pkg,
   n109_image_filtered,
   n110_device_info_pkg,
   n111_location_pkg,
   n112_switch_list_tile,
   n113_grid_view,
-  n114_table,
+  n114_table_with_wrap,
   n115_page_view,
   n116_floating_action_button,
 }
@@ -225,7 +225,7 @@ abstract class AppPages {
       page: () => N115PageViewScreen(),
     ),
     GetPage(
-      name: Routes.n114_table.toLocation,
+      name: Routes.n114_table_with_wrap.toLocation,
       page: () => N114TableScreen(),
     ),
     GetPage(
@@ -253,7 +253,7 @@ abstract class AppPages {
       page: () => N108BadgesPackage(),
     ),
     GetPage(
-      name: Routes.n107_physical_model.toLocation,
+      name: Routes.n107_physical_model_with_opacity.toLocation,
       page: () => N107PhysicalModelScreen(),
     ),
     GetPage(
@@ -545,7 +545,7 @@ abstract class AppPages {
       page: () => N32AnimatedListScreen(),
     ),
     GetPage(
-      name: Routes.n31_draggable.toLocation,
+      name: Routes.n31_draggable_with_opacity.toLocation,
       page: () => N31DraggableScreen(),
     ),
     GetPage(
@@ -606,7 +606,7 @@ abstract class AppPages {
         name: Routes.n13_fadein_image.toLocation,
         page: () => N13FadeInImageScreen()),
     GetPage(
-        name: Routes.n14_stream_builder.toLocation,
+        name: Routes.n14_stream_builder_with_animated_container.toLocation,
         page: () => N14StreamBuilderScreen()),
     GetPage(
         name: Routes.n15_inherited_widget_screen.toLocation,
