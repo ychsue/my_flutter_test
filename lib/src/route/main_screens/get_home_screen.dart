@@ -194,13 +194,14 @@ class _GetHomeScreenState extends State<GetHomeScreen> {
                         child:
                             Text("N101 ExpansionPanel and ExpansionPanelList")),
                   ),
-                if (checkQuery(Routes.n100_scrollbar.toString()))
+                if (checkQuery(Routes.n100_scrollbar_with_expanded.toString()))
                   Container(
                     margin: EdgeInsets.all(8.0),
                     child: TextButton(
                         onPressed: () =>
-                            Get.toNamed(Routes.n100_scrollbar.toLocation),
-                        child: Text("N100 Scrollbar")),
+                            Get.toNamed(
+                            Routes.n100_scrollbar_with_expanded.toLocation),
+                        child: Text("N100 Scrollbar with Expanded")),
                   ),
                 if (checkQuery(Routes.n99_connectivity_plus_pkg.toString()))
                   Container(

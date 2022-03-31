@@ -1,5 +1,7 @@
 # My Test of Flutter
 
+Watch its demos on [github.io](https://ychsue.github.io/my_flutter_test/)
+
 I'm learning how to use Flutter. 
 Therefore, I've tried to test 3 widgets or packages per week which were described in [this YouTube Series from the Flutter team](https://www.youtube.com/playlist?list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG).
 

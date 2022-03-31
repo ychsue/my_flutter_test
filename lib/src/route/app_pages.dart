@@ -195,7 +195,7 @@ enum Routes {
   n97_mouse_region,
   n98_animated_text_kit_pkg,
   n99_connectivity_plus_pkg,
-  n100_scrollbar,
+  n100_scrollbar_with_expanded,
   n101_expansion_panel,
   n102_rotated_box,
   n103_slidable_pkg,
@@ -281,7 +281,7 @@ abstract class AppPages {
       page: () => N101ExpansionPanelScren(),
     ),
     GetPage(
-      name: Routes.n100_scrollbar.toLocation,
+      name: Routes.n100_scrollbar_with_expanded.toLocation,
       page: () => N100ScrollbarScreen(),
     ),
     GetPage(
