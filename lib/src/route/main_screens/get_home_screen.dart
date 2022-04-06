@@ -61,6 +61,14 @@ class _GetHomeScreenState extends State<GetHomeScreen> {
               child: Container(
             child: ListView(
               children: [
+                if (checkQuery(Routes.n117_safearea.toString()))
+                  Container(
+                    margin: EdgeInsets.all(8.0),
+                    child: TextButton(
+                        onPressed: () =>
+                            Get.toNamed(Routes.n117_safearea.toLocation),
+                        child: Text("N117 SafeArea")),
+                  ),
                 if (checkQuery(Routes.n116_floating_action_button.toString()))
                   Container(
                     margin: EdgeInsets.all(8.0),

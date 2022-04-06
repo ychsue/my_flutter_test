@@ -1,3 +1,5 @@
+# [2022-04-06] Trying `SafeArea`
+
 # [2022-03-22] Add a search bar for home page
 
 # [2022-03-15] `FloatingActionButton`

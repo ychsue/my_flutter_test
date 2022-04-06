@@ -14,6 +14,7 @@ import 'package:test2/src/route/main_screens/n113_grid_view.dart';
 import 'package:test2/src/route/main_screens/n114_table.dart';
 import 'package:test2/src/route/main_screens/n115_page_view.dart';
 import 'package:test2/src/route/main_screens/n116_floating_action_button.dart';
+import 'package:test2/src/route/main_screens/n117_safearea_screen.dart';
 import 'package:test2/src/route/main_screens/n13_fadein_image_screen.dart';
 import 'package:test2/src/route/main_screens/n14_stream_builder_screen.dart';
 import 'package:test2/src/route/main_screens/n15_inherited_widget_screen.dart';
@@ -212,10 +213,15 @@ enum Routes {
   n114_table_with_wrap,
   n115_page_view,
   n116_floating_action_button,
+  n117_safearea,
 }
 
 abstract class AppPages {
   static final pages = [
+    GetPage(
+      name: Routes.n117_safearea.toLocation,
+      page: () => N117SafeareaScreen(),
+    ),
     GetPage(
       name: Routes.n116_floating_action_button.toLocation,
       page: () => N116FloatingActionButtonScreen(),
